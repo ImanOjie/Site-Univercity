@@ -1,0 +1,21 @@
+body{
+color: white;
+    font-family: "2  Mashhad";
+    font-weight: bold;
+    font-size: 20px;
+
+}
+table,th,tr,td{
+    color: white;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+    height: auto;
+    width:30rem;
+}
+h1{
+    color:#0DFF00;
+    text-align: right;
+    margin-top: 50px;
+}
