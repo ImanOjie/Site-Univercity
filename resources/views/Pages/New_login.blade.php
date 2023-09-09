@@ -17,15 +17,15 @@
                     @if($errors->has('family'))
                         {!! $errors->first('family') !!}
                     @endif
-                    <input type="text" name="family" class="input" placeholder="نام خانوادگی" />
+                    <input type="text" name="family" class="input input-s" placeholder="نام خانوادگی" />
                     @if($errors->has('password'))
                         {!! $errors->first('password') !!}
                     @endif
                     <input type="text" name="password" class="input" placeholder="رمز ورود" />
-
+            </div>
                     <button class="submit-btn" role="button">ثبت</button>
                 </form>
-            </div>
+
         </div>
 
 
