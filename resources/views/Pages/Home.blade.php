@@ -2,7 +2,7 @@
 @section('home')
 
     <div class="row up"></div>
-    <img class="logo" src="{{asset('/storage/logo_azad.png')}}">
+    <img class="logo" src="{{asset('/uni-storage/logo-azad.png')}}">
     <div class="row down"></div>
     <div class="titr">
         <span class="titre2">آموزشیار</span>
