@@ -2,7 +2,7 @@
 
 html,
 body {
-    background-image: url("/storage/background_manager.png");
+    background-color: #032c63;
     position: relative;
     min-height: 100vh;
     display: flex;
