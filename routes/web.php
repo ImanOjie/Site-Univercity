@@ -42,6 +42,6 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('Pages.New_login');
+        return view('pages.New_login');
     })->name('dashboard');
 });
