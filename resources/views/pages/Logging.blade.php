@@ -6,7 +6,7 @@
             <div class="agileits-top">
 
                 <form action="{{route('finishlogging')}}" method="post">
-
+                    @csrf
                     <input class="text" type="text" name="name" placeholder="نام" required="">
 
                     <input class="text" type="password" name="password" placeholder="رمز ورود" required="">
