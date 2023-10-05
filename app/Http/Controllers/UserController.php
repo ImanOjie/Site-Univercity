@@ -9,7 +9,26 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    public function register(Request $request){
+    public function logging(){
+        $page_title='ورود';
+        return view('/pages/Logging',compact('page_title'));
+    }
+
+    public function finishlogging(Request $request){
+        $user=User::where('name',$request->get('name'))->first();
+        $pass=$request->get('password');
+        if (Hash::check($pass,$user->password)) {
+            Auth::login($user);
+            return redirect()->route('home');
+        }
+    }
+
+    public function registering(){
+        $page_title='ثبت نام';
+        return view('/pages/Registering',compact('page_title'));
+    }
+
+    public function finish_registering(Request $request){
         $request->validate([
             'name' => 'required',
             'family' => 'required',
@@ -20,17 +39,7 @@ class UserController extends Controller
         $users->family=$request->get('family');
         $users->password=Hash::make($request->get('password'));
         $users->save();
-        return redirect()->route('Home')->with(['save_ok_shod'=>'ثبت با موفقیت انجام شد']);
+        return redirect()->route('logging')->with(['save_ok_shod'=>'ثبت با موفقیت انجام شد']);
     }
-    public function finishlogin(Request $request){
-        $user=User::where('name',$request->get('name'))->first();
-        $pass=$request->get('password');
-        if (Hash::check($pass,$user->password)) {
-            Auth::login($user);
-            return redirect()->route('Home');
-        }
 
-
-
-    }
 }

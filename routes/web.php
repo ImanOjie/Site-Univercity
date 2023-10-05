@@ -12,14 +12,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/',[App\Http\Controllers\HomeController::class,'Home'])->name('Home');
+Route::get('/',[App\Http\Controllers\HomeController::class,'home'])->name('home');
 Route::middleware('auth')->get('/List_course',[App\Http\Controllers\CourseController::class,'List_course'])->name('List_course');
 Route::middleware('auth')->get('/Manage',[App\Http\Controllers\HomeController::class,'Manage'])->name('Manage');
 
 //login or register
-Route::get('/startlogin',[App\Http\Controllers\HomeController::class,'startlogin'])->name('startlogin');
-Route::post('/finishlogin',[App\Http\Controllers\UserController::class,'finishlogin'])->name('finishlogin');
-Route::post('/register',[App\Http\Controllers\UserController::class,'register'])->name('register');
+Route::get('/logging',[App\Http\Controllers\UserController::class,'logging'])->name('logging');
+Route::post('/finishlogging',[App\Http\Controllers\UserController::class,'finishlogging'])->name('finishlogging');
+
+Route::get('/registering',[App\Http\Controllers\UserController::class,'registering'])->name('registering');
+Route::post('/finish_registering',[App\Http\Controllers\UserController::class,'finish_registering'])->name('finish_registering');
 
 
 Route::get('/get_course/{id}',[App\Http\Controllers\CourseController::class,'get_course'])->name('get_course');

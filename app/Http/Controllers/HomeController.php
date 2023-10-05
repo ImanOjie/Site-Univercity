@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function Home(){
+    public function home(){
         $page_title='دانشگاه آزاد';
         return view('/pages/Home',compact('page_title'));
     }
@@ -20,10 +20,7 @@ class HomeController extends Controller
         $page_title='بخش مدیریت';
         return view('/pages/Manage',compact('page_title'));
     }
-    public function startlogin(){
-        $page_title='ورود یا ثبت نام';
-        return view('/pages/New_login',compact('page_title'));
-    }
+
 
 
 }
