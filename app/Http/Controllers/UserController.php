@@ -22,7 +22,7 @@ class UserController extends Controller
         $users->save();
         return redirect()->route('Home')->with(['save_ok_shod'=>'ثبت با موفقیت انجام شد']);
     }
-    public function finish_login(Request $request){
+    public function finishlogin(Request $request){
         $user=User::where('name',$request->get('name'))->first();
         $pass=$request->get('password');
         if (Hash::check($pass,$user->password)) {

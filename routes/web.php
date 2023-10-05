@@ -17,8 +17,8 @@ Route::middleware('auth')->get('/List_course',[App\Http\Controllers\CourseContro
 Route::middleware('auth')->get('/Manage',[App\Http\Controllers\HomeController::class,'Manage'])->name('Manage');
 
 //login or register
-Route::get('/New_Login',[App\Http\Controllers\HomeController::class,'New_Login'])->name('New_Login');
-Route::post('/finish_login',[App\Http\Controllers\UserController::class,'finish_login'])->name('finish_login');
+Route::get('/startlogin',[App\Http\Controllers\HomeController::class,'startlogin'])->name('startlogin');
+Route::post('/finishlogin',[App\Http\Controllers\UserController::class,'finishlogin'])->name('finishlogin');
 Route::post('/register',[App\Http\Controllers\UserController::class,'register'])->name('register');
 
 

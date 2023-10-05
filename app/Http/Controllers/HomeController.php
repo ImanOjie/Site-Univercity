@@ -20,7 +20,7 @@ class HomeController extends Controller
         $page_title='بخش مدیریت';
         return view('/pages/Manage',compact('page_title'));
     }
-    public function New_Login(){
+    public function startlogin(){
         $page_title='ورود یا ثبت نام';
         return view('/pages/New_login',compact('page_title'));
     }

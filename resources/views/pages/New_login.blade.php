@@ -34,7 +34,7 @@
         <div class="login slide-up">
             <div class="center">
                 <h2 class="form-title" id="login">ورود</h2>
-                <form action="{{route('finish_login')}}" method="post">
+                <form action="{{route('finishlogin')}}" method="post">
                     @csrf
                     <div class="form-holder">
                         <input type="text" name="name" class="input" placeholder="نام"/>
@@ -46,4 +46,14 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 @endsection

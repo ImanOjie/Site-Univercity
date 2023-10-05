@@ -22,7 +22,7 @@
                 </form>
             @endauth
             @guest
-                <li><a class="navbar_link" href="{{route('New_Login')}}">ورود یا ثبت نام</a></li>
+                <li><a class="navbar_link" href="{{route('startlogin')}}">ورود یا ثبت نام</a></li>
             @endguest
             <li><a class="navbar_link" href="{{route('Manage')}}">پنل مدیریت</a></li>
             <li><a class="navbar_link" href="{{route('List_course')}}">انتخاب واحد</a></li>
