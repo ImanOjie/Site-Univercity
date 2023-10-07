@@ -13,14 +13,14 @@
 <body>
 
 <div class="row navbar">
-    <div class="col-md-5 login">
+    <div class="col-md-7 login">
         <ul>
             @guest
             <li>
                 <button class="login-btn">
                     <a class="navbar_link" href="{{route('logging')}}">
                         ورود به سامانه
-                        <img src="/uni-storage/Login.png" alt="login">
+                        <img src="/uni-storage/Login.png" alt="login" width="28px">
                     </a>
                 </button>
             </li>
@@ -43,7 +43,7 @@
             @endauth
         </ul>
     </div>
-    <div class="col-md-7">
+    <div class="col-md-5">
         <ul>
             <li>
                 <a class="navbar_link" href="{{route('home')}}">سایت آموزش</a>

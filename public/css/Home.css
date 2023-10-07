@@ -17,7 +17,8 @@ body{
     background-color: cornflowerblue;
 }
 ul {
-    font-family: "2  Koodak";
+    display: flex;
+    font-family: "Titr";
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -32,9 +33,10 @@ li {
 
 }
 .navbar_link{
-    color: #1200a1;
+    color: rgba(0,15,109,0.89);
     text-decoration:none;
 }
+
 .login{
     text-align: left;
     font-family: "2  Koodak";
@@ -43,11 +45,11 @@ li {
 .login-btn{
     border: none;
     border-radius: 10px;
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
 }
 .logout_btn{
-    color: greenyellow;
-    background-color: unset;
+    color:#860013;
+    background-color: transparent;
     border-style: unset;
 }
 
@@ -84,7 +86,7 @@ li {
 }
 .title{
     color: black;
-    font-family:'2  Jadid';
+    font-family:'2  Titr';
     font-size: 3.5rem;
     text-align: center;
     display: block;
