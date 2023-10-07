@@ -30,7 +30,6 @@ li {
     cursor: pointer;
     margin: 0px 0px 0px 0px;
     list-style-type: none;
-
 }
 .navbar_link{
     color: rgba(0,15,109,0.89);
@@ -43,14 +42,24 @@ li {
     font-size: 20px;
 }
 .login-btn{
+    color: green;
     border: none;
     border-radius: 10px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
+    text-decoration:none;
+}
+.login-icon{
+    width: 28px;
+    padding: 1px;
+    margin: 2px 1px 2px 4px;
 }
 .logout_btn{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px 8px 10px;
     color:#860013;
-    background-color: transparent;
-    border-style: unset;
+    background-color: white;
+    margin: 0px;
 }
 
 /*body*/

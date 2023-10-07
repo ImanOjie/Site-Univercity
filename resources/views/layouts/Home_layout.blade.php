@@ -18,9 +18,9 @@
             @guest
             <li>
                 <button class="login-btn">
-                    <a class="navbar_link" href="{{route('logging')}}">
-                        ورود به سامانه
-                        <img src="/uni-storage/Login.png" alt="login" width="28px">
+                    <a class="login-btn" href="{{route('logging')}}">
+                         ورود به سامانه
+                        <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
                     </a>
                 </button>
             </li>
