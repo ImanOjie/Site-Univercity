@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -20,6 +21,9 @@ class UserController extends Controller
         if (Hash::check($pass,$user->password)) {
             Auth::login($user);
             return redirect()->route('home');
+
+        }else {
+            return ('نام کاربری یا رمز اشتباه است');
         }
     }
 

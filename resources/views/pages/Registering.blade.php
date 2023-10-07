@@ -5,7 +5,7 @@
 
 
     <div class="main-w3layouts wrapper">
-        <h1>لطفا مشخصات خود را وارد کنید</h1>
+        <h1>مشخصات خود را وارد کنید</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
                 @if(session()->has('save_ok_shod'))

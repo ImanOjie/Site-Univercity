@@ -13,22 +13,56 @@
 <body>
 
 <div class="row navbar">
-    <div>
+    <div class="col-md-5 login">
         <ul>
-            @auth
-                <form action="{{route('logout')}}" method="post">
-                    @csrf
-                    <li><button class="logout_btn">خروج از حساب کاربری</button></li>
-                </form>
-            @endauth
             @guest
-                <li><a class="navbar_link" href="{{route('logging')}}">ورود/ثبت نام</a></li>
+            <li>
+                <button class="login-btn">
+                    <a class="navbar_link" href="{{route('logging')}}">
+                        ورود به سامانه
+                        <img src="/uni-storage/Login.png" alt="login">
+                    </a>
+                </button>
+            </li>
             @endguest
-            <li><a class="navbar_link" href="{{route('Manage')}}">پنل مدیریت</a></li>
-            <li><a class="navbar_link" href="{{route('List_course')}}">انتخاب واحد</a></li>
-            <li><a class="navbar_link" href="{{route('home')}}">صفحه اصلی</a></li>
+            @auth
+            <form action="{{route('logout')}}" method="post">
+                @csrf
+                <li>
+                    <button class="logout_btn">خروج از حساب کاربری</button>
+                </li>
+            </form>
+                <li>
+                    <a class="navbar_link" href="{{route('Manage')}}">پنل مدیریت</a>
+                </li>
+            @endauth
+            @auth
+                <li>
+                    <a class="navbar_link" href="{{route('List_course')}}">انتخاب واحد</a>
+                </li>
+            @endauth
         </ul>
     </div>
+    <div class="col-md-7">
+        <ul>
+            <li>
+                <a class="navbar_link" href="{{route('home')}}">سایت آموزش</a>
+            </li>
+            <li>
+                <a class="navbar_link" href="{{route('home')}}">اطلاعیه ها</a>
+            </li>
+            <li>
+                <a class="navbar_link" href="{{route('home')}}">آرشیو اخبار</a>
+            </li>
+            <li>
+                <a class="navbar_link" href="{{route('home')}}">آموزش مجازی</a>
+            </li>
+            <li>
+                <a class="navbar_link" href="{{route('home')}}">صفحه اصلی</a>
+            </li>
+        </ul>
+    </div>
+
 </div>
 
 
