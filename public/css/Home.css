@@ -1,5 +1,5 @@
 body{
-    background-color: #bcbebf;
+    background-image: url("/uni-storage/back.jpg");
     width: 100%;
     font-family: "2  Karim";
 }
@@ -85,7 +85,7 @@ li {
     height: 20px;
 }
 .titr{
-    color: black;
+    color: white;
     text-align: center;
     display: block;
     margin: 0px;
@@ -94,7 +94,7 @@ li {
     font-family: "2  Karim";
 }
 .title{
-    color: black;
+    color: white;
     font-family:'2  Titr';
     font-size: 3.5rem;
     text-align: center;
