@@ -28,7 +28,6 @@ Route::post('/finish_registering',[App\Http\Controllers\UserController::class,'f
 Route::get('/get_course/{id}',[App\Http\Controllers\CourseController::class,'get_course'])->name('get_course');
 Route::get('/delete_getting_course/{id}',[App\Http\Controllers\CourseController::class,'delete_getting_course'])->name('delete_getting_course');
 
-Route::get('/fullscreen_schedule_table',[App\Http\Controllers\HomeController::class,'fullscreen_schedule_table'])->name('fullscreen_schedule_table');
 
 
 

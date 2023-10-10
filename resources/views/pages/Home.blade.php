@@ -27,7 +27,7 @@
 
             <p class="title2-table">برنامه زمانبندی انتخاب و احد نیمسال اول سال تحصیلی 1403 - 1402</p>
             <div>
-                <button class="btn-view-table"><a href="{{route('fullscreen_schedule_table')}}">مشاهده تصویر بزرگ</a></button>
+                <button class="btn-view-table"><a href="{{asset('/uni-storage/schedule-table.png')}}">مشاهده تصویر بزرگ</a></button>
             </div>
             <div>
                 <button class="btn-download-table"></button>
