@@ -14,4 +14,21 @@
         </span>
     </div>
 
+    <hr>
+
+    <div class="row table-row">
+        <div class="col-md-5">
+
+        </div>
+        <div class="col-md-7 title-table">
+            برنامه زمانبندی انتخاب واحد نیمسال اول سال تحصیلی 1403 - 1402
+            <img src="/uni-storage/line.png" alt="line" class="line">
+        </div>
+
+
+    </div>
+
+
+
+
 @endsection

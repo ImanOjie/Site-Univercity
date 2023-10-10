@@ -46,16 +46,16 @@
     <div class="col-md-5">
         <ul>
             <li>
-                <a class="navbar_link" href="{{route('home')}}">سایت آموزش</a>
+                <a class="navbar_link" href="#">سایت آموزش</a>
             </li>
             <li>
-                <a class="navbar_link" href="{{route('home')}}">اطلاعیه ها</a>
+                <a class="navbar_link" href="#">اطلاعیه ها</a>
             </li>
             <li>
-                <a class="navbar_link" href="{{route('home')}}">آرشیو اخبار</a>
+                <a class="navbar_link" href="#">آرشیو اخبار</a>
             </li>
             <li>
-                <a class="navbar_link" href="{{route('home')}}">آموزش مجازی</a>
+                <a class="navbar_link" href="#">آموزش مجازی</a>
             </li>
             <li>
                 <a class="navbar_link" href="{{route('home')}}">صفحه اصلی</a>
