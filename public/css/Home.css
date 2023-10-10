@@ -1,16 +1,18 @@
 body{
-    background-color: #2A2781;
+    background-color: #4b37ff;
     width: 100%;
     font-family: "2  Karim";
 }
-
+p{
+    margin: 0;
+    padding: 0;
+}
 /*navbar*/
 
 .row{
     margin: 0px;
     padding: 0px;
     text-align: right;
-
 }
 .navbar{
     position: sticky;
@@ -104,18 +106,23 @@ li {
     padding:0px 0px 20px 0px;
 }
 .table-row{
-    padding: 50px;
+    padding: 100px;
     text-align: center;
 }
-.title-table{
+.title1-table{
     font-family: "B Yekan";
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
 }
 .line{
-    width: 64%;
-    margin: 10px 0px 0px 0px;
-    clip-path: inset(0px 0px 25px 0px);
+    width: 45rem;
+    margin: 0;
+    padding: 0;
+}
+.title2-table{
+    padding: 0;
+    margin: 70px 70px 0px 0px;
+    text-align: right;
 }

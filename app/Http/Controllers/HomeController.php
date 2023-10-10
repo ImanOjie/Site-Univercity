@@ -20,7 +20,10 @@ class HomeController extends Controller
         $page_title='بخش مدیریت';
         return view('/pages/Manage',compact('page_title'));
     }
-
+    public  function fullscreen_schedule_table(){
+        $page_title='جدول زمانبندی';
+        return view('/pages/Schedule-table',compact('page_title'));
+}
 
 
 }
