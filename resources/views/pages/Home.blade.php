@@ -27,10 +27,14 @@
 
             <p class="title2-table">برنامه زمانبندی انتخاب و احد نیمسال اول سال تحصیلی 1403 - 1402</p>
             <div>
-                <button class="btn-view-table"><a href="{{asset('/uni-storage/schedule-table.png')}}">مشاهده تصویر بزرگ</a></button>
+                    <a href="{{asset('/uni-storage/schedule-table.png')}}">
+                        <button class="btn-view-table">مشاهده تصویر بزرگ</button>
+                    </a>
             </div>
             <div>
-                <button class="btn-download-table"></button>
+                    <a href="{{asset('/uni-storage/schedule-table.pdf')}}">
+                        <button class="btn-download-table">برنامه زمانبندی حذف و اضافه نیمسال اول سال تحصیلی 1403 - 1402</button>
+                    </a>
             </div>
         </div>
     </div>
