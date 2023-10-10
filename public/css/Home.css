@@ -106,24 +106,28 @@ li {
     padding:0px 0px 20px 0px;
 }
 .table-row{
-    padding: 100px;
+    padding: 50px 10px 10px 100px;
     text-align: center;
+}
+.col-schedule-btn{
+    padding: 50px 0px 50px 100px;
 }
 .title1-table{
     font-family: "B Yekan";
     font-weight: 400;
     font-style: normal;
-    font-size: 22px;
-    padding: 20px 0px 10px 0px;
+    font-size: 23px;
+    margin: auto;
+    padding: 0px 70px 10px 10px;
 }
 .line{
-    width: 45rem;
+    width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0px 50px 0px 0px;
 }
 .title2-table{
     padding: 0;
-    margin: 70px 70px 10px 0px;
+    margin: 50px 70px 10px 0px;
     text-align: right;
 }
 .btn-view-table{
@@ -151,6 +155,12 @@ li {
     box-shadow: 0px 1px 10px 1px cyan;
     margin: 15px 0px 20px 0px;
 }
+.box-schedule-table{
+    border-radius: 16px;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+}
 .schedule-table{
-    
+    width: 100%;
+    height: 100%;
 }

@@ -17,11 +17,11 @@
     <hr>
 
     <div class="row table-row">
-        <div class="col-md-5">
+        <div class="col-md-5 box-schedule-table">
             <img src="/uni-storage/schedule-table.png" alt="schedule-table" class="schedule-table">
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-7 col-schedule-btn">
             <p class="title1-table">برنامه زمانبندی انتخاب واحد نیمسال اول سال تحصیلی 1403 - 1402</p>
 
             <img src="/uni-storage/line.png" alt="line" class="line">
@@ -39,6 +39,10 @@
             </div>
         </div>
     </div>
+
+    <hr>
+
+
 
 
 
