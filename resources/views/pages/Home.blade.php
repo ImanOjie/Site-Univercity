@@ -18,8 +18,9 @@
 
     <div class="row table-row">
         <div class="col-md-5">
-
+            <img src="/uni-storage/schedule-table.png" alt="schedule-table" class="schedule-table">
         </div>
+
         <div class="col-md-7">
             <p class="title1-table">برنامه زمانبندی انتخاب واحد نیمسال اول سال تحصیلی 1403 - 1402</p>
 
