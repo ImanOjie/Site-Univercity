@@ -164,3 +164,7 @@ li {
     width: 100%;
     height: 100%;
 }
+.btn-view-table:hover,.btn-download-table:hover{
+    background-color: #0b6100;
+    color: white;
+}
