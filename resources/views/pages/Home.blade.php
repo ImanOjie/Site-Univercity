@@ -50,8 +50,9 @@
         <img src="/uni-storage/chart.png" alt="chart" class="chart">
     </div>
 
-
-
+    <div class="row end-footer">
+<p> Created By IMAN OJIE 😎</p>
+    </div>
 
 
 
