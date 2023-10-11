@@ -125,11 +125,7 @@ li {
     margin: auto;
     padding: 0px 70px 10px 10px;
 }
-.line{
-    width: 100%;
-    margin: 0;
-    padding: 0px 50px 0px 0px;
-}
+
 .title2-table{
     padding: 0;
     margin: 50px 70px 10px 0px;
@@ -173,4 +169,12 @@ li {
 .btn-view-table:hover,.btn-download-table:hover{
     background-color: #0b6100;
     color: white;
+}
+.line1{
+    width: 100%;
+    margin: 0;
+    padding: 0px 50px 0px 0px;
+}
+.line2{
+    width: 50px;
 }

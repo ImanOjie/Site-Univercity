@@ -24,7 +24,7 @@
         <div class="col-md-7 col-schedule-btn">
             <p class="title1-table">برنامه زمانبندی انتخاب واحد نیمسال اول سال تحصیلی 1403 - 1402</p>
 
-            <img src="/uni-storage/line.png" alt="line" class="line">
+            <img src="/uni-storage/line1.png" alt="line1" class="line">
 
             <p class="title2-table">برنامه زمانبندی انتخاب و احد نیمسال اول سال تحصیلی 1403 - 1402</p>
             <div>
@@ -41,6 +41,12 @@
     </div>
 
     <hr>
+
+    <div class="row">
+
+        <img src="/uni-storage/line2.png" alt="line2" class="line2">
+        <img src="/uni-storage/" alt="">
+    </div>
 
 
 
