@@ -13,9 +13,7 @@ class Usercourse extends Model
     protected $table='usercourse';
     protected $guarded=[];
 
-    /*protected function xxx(){
-        return $this->belongsTo('App\Models\xxx');
-    }*/
+
     public function xxx()
     {
         return $this->belongsTo(xxx::class, 'course_id');
