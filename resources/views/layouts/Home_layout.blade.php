@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('/css/bootstrap.rtl.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/Home.css')}}">
     <link rel="stylesheet" href="{{asset('/css/course_table.css')}}">
+    <link rel="icon" type="image/x-icon" href="/uni-storage/logo-azad.png">
     <title>{{$page_title}}</title>
 </head>
 <body>

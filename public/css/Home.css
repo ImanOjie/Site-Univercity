@@ -16,7 +16,6 @@ p{
 }
 .sticky{
     position: fixed;
-    padding-top: 10px;
     width:100%;
 }
 .navbar{
