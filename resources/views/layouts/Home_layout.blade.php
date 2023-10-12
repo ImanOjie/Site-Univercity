@@ -20,12 +20,24 @@
             <li>
                 <button class="login-btn">
                     <a class="login-btn" href="{{route('logging')}}">
+                         ثبت نام در سامانه
+                        <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
+                    </a>
+                </button>
+            </li>
+            @endguest
+
+            @guest
+            <li>
+                <button class="login-btn">
+                    <a class="login-btn" href="{{route('logging')}}">
                          ورود به سامانه
                         <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
                     </a>
                 </button>
             </li>
             @endguest
+
             @auth
                 <li>
                     <a class="navbar_link" href="{{route('Manage')}}">پنل مدیریت</a>
