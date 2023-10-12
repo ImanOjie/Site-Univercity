@@ -14,7 +14,7 @@
 <body>
 
 <div class="row navbar">
-    <div class="col-md-7 login">
+    <div class="col-md-4 login">
         <ul>
             @guest
             <li>
@@ -27,15 +27,16 @@
             </li>
             @endguest
             @auth
+                <li>
+                    <a class="navbar_link" href="{{route('Manage')}}">پنل مدیریت</a>
+                </li>
             <form action="{{route('logout')}}" method="post">
                 @csrf
                 <li>
                     <button class="logout_btn">خروج از حساب کاربری</button>
                 </li>
             </form>
-                <li>
-                    <a class="navbar_link" href="{{route('Manage')}}">پنل مدیریت</a>
-                </li>
+
             @endauth
             @auth
                 <li>
@@ -44,8 +45,10 @@
             @endauth
         </ul>
     </div>
+    <div class="col-md-3"></div>
     <div class="col-md-5">
         <ul>
+            @guest
             <li>
                 <a class="navbar_link" href="#">سایت آموزش</a>
             </li>
@@ -58,11 +61,13 @@
             <li>
                 <a class="navbar_link" href="#">آموزش مجازی</a>
             </li>
+            @endguest
             <li>
                 <a class="navbar_link" href="{{route('home')}}">صفحه اصلی</a>
             </li>
         </ul>
     </div>
+
 
 </div>
 
