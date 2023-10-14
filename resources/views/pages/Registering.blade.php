@@ -8,9 +8,9 @@
         <h1>مشخصات خود را وارد کنید</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                @if(session()->has('save_ok_shod'))
+                {{--@if(session()->has('save_ok_shod'))
                     {{session()->get('save_ok_shod')}}
-                @endif
+                @endif--}}
                 <form action="{{route('finish_registering')}}" method="post">
                     @csrf
                     @if($errors->has('name'))

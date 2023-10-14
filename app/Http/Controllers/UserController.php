@@ -32,18 +32,29 @@ class UserController extends Controller
         return view('/pages/Registering',compact('page_title'));
     }
 
-    public function finish_registering(Request $request){
+    public function finish_registering(Request $request)
+    {
         $request->validate([
             'name' => 'required',
             'family' => 'required',
-            'password' => 'required',
+            'password' => 'required|min:4',
         ]);
-        $users = new User();
-        $users->name=$request->get('name');
-        $users->family=$request->get('family');
-        $users->password=Hash::make($request->get('password'));
-        $users->save();
-        return redirect()->route('logging')->with(['save_ok_shod'=>'ثبت با موفقیت انجام شد']);
+
+        $name = $request->input('name');
+        $family = $request->input('family');
+        $users = User::where('name',$request->get('name'))-> where('family',$request->get('family'))->first();
+
+        if ((!$users == $name) && (!$users == $family) ) {
+            $users = new User();
+            $users->name=$request->get('name');
+            $users->family=$request->get('family');
+            $users->password=Hash::make($request->get('password'));
+            $users->save();
+            return redirect()->route('home')/*->with(['save_ok_shod'=>'ثبت با موفقیت انجام شد'])*/;
+        }else{
+            return ('شما قبلا ثبت نام کردید');
+        }
+
     }
 
 }
