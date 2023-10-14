@@ -19,7 +19,7 @@
             @guest
             <li>
                 <button class="login-btn">
-                    <a class="login-btn" href="{{route('logging')}}">
+                    <a class="login-btn" href="{{route('registering')}}">
                          ثبت نام در سامانه
                         <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
                     </a>

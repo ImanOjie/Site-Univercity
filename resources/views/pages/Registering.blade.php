@@ -34,7 +34,6 @@
                     </div>
                     <input type="submit" value="ایجاد حساب">
                 </form>
-                    <p>اگر حساب کاربری ساخته اید روی<a href="{{route('logging')}}" class="register-btn"> ورود</a> کلیک کنید </p>
             </div>
         </div>
 

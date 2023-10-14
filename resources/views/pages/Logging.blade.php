@@ -15,7 +15,6 @@
                     </div>
                     <input type="submit" value="ورود">
                 </form>
-                <p>اگر حساب کاربری نساخته اید روی<a href="{{route('registering')}}" class="register-btn"> ثبت نام</a> کلیک کنید </p>
             </div>
         </div>
 
