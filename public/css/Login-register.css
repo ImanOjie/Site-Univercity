@@ -196,25 +196,25 @@ img {
 
 /*-- end reset --*/
 body {
-    background: #76b852;
+    background: #6495ED;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #76b852, #8dc26f);
-    background: -moz-linear-gradient(to top, #76b852, #8dc26f);
-    background: -o-linear-gradient(to top, #76b852, #8dc26f);
-    background: linear-gradient(to top, #76b852, #8dc26f);
+    background: -webkit-linear-gradient(to top, #6495ED, #6495ED);
+    background: -moz-linear-gradient(to top, #6495ED, #6495ED);
+    background: -o-linear-gradient(to top, #4B37FF, #6495ED);
+    background: linear-gradient(to top, #00c9ff, #4B37FF);
     background-size: cover;
     background-attachment: fixed;
     font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-    color: #fff;
-    font-weight: 100;
+    color: white;
+    font-weight: 1000;
     text-transform: capitalize;
-    letter-spacing: 4px;
-    font-family: "Roboto", sans-serif;
+    letter-spacing: 2.5px;
+    font-family: "2  Zar", sans-serif;
 }
 .register-btn{
     font-size: 20px;
