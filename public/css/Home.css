@@ -230,7 +230,7 @@ li {
     min-width: 230px;
     overflow: auto;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 10px 1px cyan;
     top: 50px;
     right: 0;
     z-index: 1;
@@ -243,6 +243,6 @@ li {
     display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: greenyellow;}
 
 .show {display: block;}
