@@ -51,7 +51,7 @@
     </div>
 
     <div class="row end-footer">
-<p> Created By IMAN OJIE 😎</p>
+<p> این سایت فقط جنبه نمونه کار برای رزومه دارد</p>
     </div>
 
 
