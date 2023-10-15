@@ -451,15 +451,15 @@ input.checkbox:checked:after {
     position: absolute;
     list-style: none;
     display: block;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.15);
-    bottom: -160px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(59,0,255,0.5);
+    bottom: 0px;
     -webkit-animation: square 20s infinite;
     -moz-animation: square 250s infinite;
     -o-animation: square 20s infinite;
     -ms-animation: square 20s infinite;
-    animation: square 20s infinite;
+    animation: square 30s infinite;
     -webkit-transition-timing-function: linear;
     -moz-transition-timing-function: linear;
     -o-transition-timing-function: linear;
@@ -477,7 +477,7 @@ input.checkbox:checked:after {
 }
 
 .colorlib-bubbles li:nth-child(2) {
-    left: 20%;
+    left: 1%;
     width: 80px;
     height: 80px;
     -webkit-animation-delay: 2s;
