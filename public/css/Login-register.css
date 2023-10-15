@@ -136,7 +136,7 @@ a {
 
 /* text align right */
 .txt-lt {
-    text-align: left;
+    text-align: right;
 }
 
 /* text align left */
@@ -151,7 +151,7 @@ a {
 
 /* float right */
 .float-lt {
-    float: left;
+    float: right;
 }
 
 /* float left */
@@ -299,26 +299,33 @@ input.text.w3lpass {
 }
 
 input[type="submit"] {
-    font-size: 0.9em;
-    color: #fff;
-    background: #76b852;
+    display: block;
+    font-family: "2  Nazanin";
+    font-size: 25px;
+    font-weight: 1000;
+    color: black;
+    background: #00ff25;
     outline: none;
-    border: 1px solid #76b852;
+    border: 2px solid #0800ff;
+    border-radius: 10px;
     cursor: pointer;
-    padding: 0.9em;
+    padding: 5px 10px 5px 10px;
     -webkit-appearance: none;
-    width: 100%;
-    margin: 2em 0;
-    letter-spacing: 4px;
+    width: 80%;
+    margin: 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1.5px;
 }
 
 input[type="submit"]:hover {
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    transition: 0.5s all;
-    background: #8dc26f;
+    color: white;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    -ms-transition: 0.1s all;
+    transition: 0.4s all;
+    background: #086300;
 }
 
 .agileits-top p {
@@ -344,18 +351,25 @@ input[type="submit"]:hover {
 /*-- //main --*/
 /*-- checkbox --*/
 .wthree-text label {
-    font-size: 0.9em;
+    display: block;
+    text-align: right;
+    font-family: "2  Nazanin";
+    font-weight: 1000;
+    font-size: 15px;
     color: #fff;
     font-weight: 200;
+    padding: 20px;
     cursor: pointer;
     position: relative;
 }
-
+.law{
+    padding-right: 10px;
+}
 input.checkbox {
-    background: #8dc26f;
+    background:#1D6CD1;
     cursor: pointer;
     width: 1.2em;
-    height: 1.2em;
+    height: 0.9em;
 }
 
 input.checkbox:before {
@@ -363,23 +377,24 @@ input.checkbox:before {
     position: absolute;
     width: 1.2em;
     height: 1.2em;
-    background: inherit;
+    background: #1D6CD1;
     cursor: pointer;
 }
 
 input.checkbox:after {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0;
+    top: 22px;
+    right: 20px;
     z-index: 1;
     width: 1.2em;
     height: 1.2em;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+    border-radius: 1px;
     -webkit-transition: 0.4s ease-in-out;
     -moz-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 input.checkbox:checked:after {

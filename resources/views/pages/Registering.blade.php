@@ -27,8 +27,8 @@
                     <input class="text w3lpass" type="password" name="password" placeholder="رمز عبور" required="">
                     <div class="wthree-text">
                         <label class="anim">
+                            <span class="law">من با شرایط و قوانین موافق هستم</span>
                             <input type="checkbox" class="checkbox" required="">
-                            <span>من با شرایط و قوانین موافق هستم</span>
                         </label>
                         <div class="clear"> </div>
                     </div>
