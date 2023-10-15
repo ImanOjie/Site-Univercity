@@ -38,8 +38,8 @@
                                 <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
                             </button>
                             <div id="myDropdown" class="dropdown-content">
-                                <a href="{{route('registering')}}">ورود دانشجویان ( انتخاب واحد )</a>
-                                <a href="#about">ورود پرسنل سازمانی</a>
+                                <a href="{{route('logging')}}">ورود دانشجویان ( انتخاب واحد )</a>
+                                <a href="{{route('logging')}}">ورود پرسنل سازمانی</a>
                             </div>
 
                         </div>

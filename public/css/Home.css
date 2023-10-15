@@ -243,6 +243,9 @@ li {
     display: block;
 }
 
-.dropdown a:hover {background-color: greenyellow;}
+.dropdown a:hover {
+    background-color: greenyellow;
+    color: purple;
+}
 
 .show {display: block;}
