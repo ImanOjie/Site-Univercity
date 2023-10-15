@@ -11,15 +11,7 @@ class HomeController extends Controller
         $page_title='دانشگاه آزاد';
         return view('/pages/Home',compact('page_title'));
     }
-    public function List_course(){
-        $course=Course::all();
-        $page_title='صفحه انتخاب واحد';
-        return view('/pages/List_course',compact('page_title','course'));
-    }
-    public function Manage(){
-        $page_title='بخش مدیریت';
-        return view('/pages/Manage',compact('page_title'));
-    }
+
 
 
 

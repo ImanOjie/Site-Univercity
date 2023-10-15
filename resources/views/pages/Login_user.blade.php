@@ -2,10 +2,11 @@
 @section('login')
 
     <div class="main-w3layouts wrapper">
+        <h1>سامانه دانشجویی</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
 
-                <form action="{{route('finishlogging')}}" method="post">
+                <form action="{{route('finishlogin_user')}}" method="post">
                     @csrf
                     <input class="text" type="text" name="name" placeholder="نام" required="">
 

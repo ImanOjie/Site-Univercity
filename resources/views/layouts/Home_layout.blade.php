@@ -11,13 +11,12 @@
     <link rel="icon" type="image/x-icon" href="/uni-storage/logo-azad.png">
     <title>{{$page_title}}</title>
 </head>
-<body>
 
+<body>
 <div class="row navbar">
     <div class="col-md-4 login">
         <ul>
             @guest
-
                 <li>
                     <a class="login-btn" href="{{route('registering')}}" >
                         <button class="login-btn" type="button">
@@ -26,45 +25,27 @@
                         </button>
                     </a>
                 </li>
-
-
-            @endguest
-
-            @guest
-                    <li>
-                        <div class="dropdown">
-                            <button onclick="myFunction()" class="login-btn dropbtn">
-                                ورود به سامانه
-                                <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
-                            </button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="{{route('logging')}}">ورود دانشجویان ( انتخاب واحد )</a>
-                                <a href="{{route('logging')}}">ورود پرسنل سازمانی</a>
-                            </div>
-
+                <li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="login-btn dropbtn">
+                            ورود به سامانه
+                            <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="{{route('login_user')}}">ورود دانشجویان ( انتخاب واحد )</a>
+                            <a href="{{route('login_manager')}}">ورود پرسنل سازمانی</a>
                         </div>
-                    </li>
+                    </div>
+                </li>
             @endguest
-
-
-
 
             @auth
-                <li>
-                    <a class="navbar_link" href="{{route('Manage')}}">پنل مدیریت</a>
-                </li>
             <form action="{{route('logout')}}" method="post">
                 @csrf
                 <li>
                     <button class="logout_btn">خروج از حساب کاربری</button>
                 </li>
             </form>
-
-            @endauth
-            @auth
-                <li>
-                    <a class="navbar_link" href="{{route('List_course')}}">انتخاب واحد</a>
-                </li>
             @endauth
         </ul>
     </div>
