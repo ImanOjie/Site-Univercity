@@ -17,26 +17,37 @@
     <div class="col-md-4 login">
         <ul>
             @guest
-            <li>
-                <button class="login-btn">
-                    <a class="login-btn" href="{{route('registering')}}">
-                         ثبت نام در سامانه
-                        <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
+
+                <li>
+                    <a class="login-btn" href="{{route('registering')}}" >
+                        <button class="login-btn" type="button">
+                            ثبت نام در سامانه
+                            <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
+                        </button>
                     </a>
-                </button>
-            </li>
+                </li>
+
+
             @endguest
 
             @guest
-            <li>
-                <button class="login-btn">
-                    <a class="login-btn" href="{{route('logging')}}">
-                         ورود به سامانه
-                        <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
-                    </a>
-                </button>
-            </li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="login-btn dropbtn">
+                                ورود به سامانه
+                                <img src="/uni-storage/Login.png" alt="login" class="login-icon" >
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="{{route('registering')}}">ورود دانشجویان ( انتخاب واحد )</a>
+                                <a href="#about">ورود پرسنل سازمانی</a>
+                            </div>
+
+                        </div>
+                    </li>
             @endguest
+
+
+
 
             @auth
                 <li>

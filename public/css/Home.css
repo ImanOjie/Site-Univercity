@@ -12,7 +12,7 @@ p{
 .row{
     margin: 0px;
     padding: 0px;
-    text-align: right;
+
 }
 .sticky{
     position: fixed;
@@ -22,7 +22,7 @@ p{
     width: 100%;
     height: 60px;
     background-color: cornflowerblue;
-    z-index: 2;
+    z-index: 1;
 }
 ul {
     display: flex;
@@ -212,3 +212,37 @@ li {
     height: 70px;
     padding: 20px 0px 20px 0px;
 }
+
+/*dropdown btn*/
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    text-align: right;
+    position: absolute;
+    font-family: "B Yekan";
+    font-size: 16px;
+    background-color: #f1f1f1;
+    min-width: 230px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 50px;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
