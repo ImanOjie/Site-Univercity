@@ -108,7 +108,6 @@ body {
     font-family: Arial, Tahoma, sans-serif;
     font-size: 62.5%;
     line-height: 1;
-    padding-bottom: 65px;
 }
 
 article,
@@ -155,11 +154,10 @@ img {
 
 h1 {
     display: block;
-    font-size: 2.75em;
+    font-size: 3em;
     line-height: 2.35em;
     color: #7291a5;
-    margin-bottom: 12px;
-    font-weight: normal;
+    font-weight: bold;
     font-family: "Oldenburg", "Trebuchet MS", Arial, sans-serif;
     text-shadow: 0px 1px 1px #fff;
     text-align: center;
@@ -172,20 +170,40 @@ p {
     color: #343434;
     margin-bottom: 12px;
 }
+.page{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* page container */
+.menu{
+    position: relative;
+    background-color: white;
+    padding: 0px 5px 200px 5px;
+    height: 100%;
+}
 #wrap {
+
     display: block;
-    width: 850px;
-    margin: 0 auto;
-    padding-top: 35px;
+    width: 100%;
+    margin: 0;
+    padding-top: 3rem;
+}
+.second-btn{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-top: 200px;
 }
 
 /* user menu settings */
 #dropdown {
     display: block;
-    padding: 13px 16px;
-    width: 266px;
+    padding: 15px 0px;
+    text-align: center;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     cursor: pointer;
@@ -203,6 +221,7 @@ p {
     -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
 }
+
 #dropdown:hover {
     color: #898989;
 }
@@ -216,8 +235,8 @@ p {
 #dropdown ul {
     position: absolute;
     top: 100%;
-    left: -4px; /* move content -4px because of container left border */
-    width: 266px;
+    left: -4px;
+    width: 100%;
     padding: 5px 0px;
     display: none;
     border-left: 4px solid #8e9196;
