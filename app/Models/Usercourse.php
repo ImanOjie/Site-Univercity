@@ -14,9 +14,9 @@ class Usercourse extends Model
     protected $guarded=[];
 
 
-    public function xxx()
+    public function Course()
     {
-        return $this->belongsTo(xxx::class, 'course_id');
+        return $this->belongsTo(Course::class, 'course_id');
     }
 
 

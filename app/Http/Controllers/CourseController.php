@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\User;
-use App\Models\xxx;
+use App\Models\Course;
 use App\Models\Usercourse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,8 +15,8 @@ class CourseController extends Controller
 
     public function list_course(){
         $page_title='صفحه انتخاب واحد';
-        $lists=xxx::all();
-        $all_selected= Usercourse::with('xxx')->where('user_id' , auth()->user()->id)->get();
+        $lists=Course::all();
+        $all_selected= Usercourse::with('Course')->where('user_id' , auth()->user()->id)->get();
         return view('pages.List_course',compact('page_title','lists','all_selected'));
     }
     public function get_course($id){

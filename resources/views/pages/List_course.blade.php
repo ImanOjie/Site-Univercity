@@ -47,8 +47,8 @@
                 @foreach($all_selected as $tt )
                     <tr>
                         <td><a href="{{route('delete_getting_course',['id' => $tt->id])}}"><button class="get_unit">حذف درس</button></a></td>
-                        <td>{{$tt->xxx->unit}}</td>
-                        <td>{{$tt->xxx->name}}</td>
+                        <td>{{$tt->Course->unit}}</td>
+                        <td>{{$tt->Course->name}}</td>
                         <td>{{$tt->index+1}}</td>
                     </tr>
                 @endforeach
