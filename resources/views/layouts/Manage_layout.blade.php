@@ -27,5 +27,6 @@
 <script src="{{asset('/js/jquery.min.js')}}"></script>
 <script src="{{asset('/js/propper.js')}}"></script>
 <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('/js/Manage.js')}}"></script>
 
 </html>
