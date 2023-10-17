@@ -3,6 +3,7 @@
     <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md-3">
+            <h1>لیست دروس</h1>
             <table>
                 <thead>
                 <tr>
