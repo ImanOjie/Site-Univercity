@@ -11,8 +11,13 @@
     <title>{{$page_title}}</title>
 </head>
 <body>
-<p>{{auth()->user()->name}}</p>
-<p>{{auth()->user()->family}}</p>
+
+<div class="username">
+    <span>کاربر:</span>
+    {{auth()->user()->name}}
+    {{auth()->user()->family}}
+</div>
+
 
 
 
