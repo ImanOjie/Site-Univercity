@@ -100,11 +100,11 @@ video {
     letter-spacing: 2px;
 }
 html {
-    height: 101%;
+    height: 100%;
 }
 body {
-
-    background: #dde9f0 url("https://i.imgur.com/p6YhOiv.png");
+    text-align: right;
+    background: #B9D2FF;
     font-family: Arial, Tahoma, sans-serif;
     font-size: 62.5%;
     line-height: 1;
