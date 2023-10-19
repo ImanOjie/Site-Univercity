@@ -73,7 +73,6 @@ class UserController extends Controller
 
     }
 
-
     public function List_course(){
         $course=Course::all();
         $page_title='صفحه انتخاب واحد';
@@ -83,5 +82,9 @@ class UserController extends Controller
         $page_title='بخش مدیریت';
         return view('/pages/Manage',compact('page_title'));
     }
+
+
+
+
 
 }

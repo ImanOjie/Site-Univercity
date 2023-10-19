@@ -30,8 +30,7 @@
 
 
 <div class="row page">
-    <div class="col-1"></div>
-    <div class="col-8">
+    <div class="col-9">
         @yield('manage')
     </div>
     <div class="col-3 menu">
@@ -40,7 +39,7 @@
             <div id="dropdown" class="ddmenu">
                 تنظیمات کاربران
                 <ul>
-                    <li><a href="#">لیست کاربران</a></li>
+                    <li><a href="{{route('Manage_list_users')}}">لیست کاربران</a></li>
                     <li><a href="#">افزودن کاربر</a></li>
                     <li><a href="#">حذف کاربر</a></li>
                     <li><a href="#">تغییر اطلاعات کاربر</a></li>

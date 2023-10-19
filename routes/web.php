@@ -31,6 +31,9 @@ Route::post('/finish_registering',[App\Http\Controllers\UserController::class,'f
 Route::get('/get_course/{id}',[App\Http\Controllers\CourseController::class,'get_course'])->name('get_course');
 Route::get('/delete_getting_course/{id}',[App\Http\Controllers\CourseController::class,'delete_getting_course'])->name('delete_getting_course');
 
+//manage pages
+Route::get('/Manage_list_users',[App\Http\Controllers\ManageController::class,'Manage_list_users'])->name('Manage_list_users');
+
 
 
 
