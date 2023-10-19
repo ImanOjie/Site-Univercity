@@ -12,10 +12,19 @@
 </head>
 <body>
 
-<div class="username">
-    {{auth()->user()->name}}
-    {{auth()->user()->family}}
-    <span>:کاربر</span>
+<div class="row navbar-user">
+    <div class="col-md-3">
+        <form action="{{route('logout')}}" method="post">
+            @csrf
+            <button class="logout_btn">خروج از حساب کاربری</button>
+        </form>
+    </div>
+    <div class="col-md-9 username">
+        {{auth()->user()->name}}
+        {{auth()->user()->family}}
+        <span>:کاربر</span>
+    </div>
+
 </div>
 
 
