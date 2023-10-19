@@ -13,9 +13,9 @@
 <body>
 
 <div class="username">
-    <span>کاربر:</span>
     {{auth()->user()->name}}
     {{auth()->user()->family}}
+    <span>:کاربر</span>
 </div>
 
 
