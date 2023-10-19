@@ -103,7 +103,7 @@ html {
     height: 100%;
 }
 body {
-    display: block;
+
     justify-content: right;
     justify-items: right;
     text-align: right;
@@ -157,14 +157,14 @@ img {
 
 h1 {
     display: block;
-    font-size: 3em;!important;
+    font-size: 27px;!important;
     line-height: 2.35em;
     color: black;
     font-weight: bold;
     font-family: "2  Titr";
     text-shadow: 0px 1px 1px red;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 p {
@@ -176,9 +176,12 @@ p {
 }
 .page{
     margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    padding: 0px 10px 0px 0px;
 }
 
 /* page container */
@@ -187,7 +190,7 @@ p {
     border-radius: 50px;
     padding: 0px 3px 150px 5px;
     height: 100%;
-    width: 25rem;
+    width: 20rem;
 }
 #wrap {
     display: block;
@@ -211,7 +214,7 @@ p {
     margin: 0 auto;
     position: relative;
     cursor: pointer;
-    border-left: 4px solid #739cda;
+    border-radius: 15px;
     background: #fff;
     font-size: 1.55em;
     color: #656565;
@@ -227,23 +230,24 @@ p {
 }
 
 #dropdown:hover {
-    color: #898989;
+    color: green;
 }
 
 #dropdown.open {
-    background: #5a90e0;
+    background: rgba(0,255,98,0.39);
     color: #fff;
-    border-left-color: #6c6d70;
+
 }
 
 #dropdown ul {
     position: absolute;
     top: 100%;
-    left: -4px;
-    width: 100%;
+    left: 9px;
+    width: 95%;
+    margin-top: 5px ;
     padding: 5px 0px;
     display: none;
-    border-left: 4px solid #8e9196;
+    border-radius: 8px;
     background: #fff;
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);

@@ -21,13 +21,11 @@
 
 
 <div class="row page">
-    <div class="col-md-1"></div>
-
-    <div class="col-md-8">
+    <div class="col-1"></div>
+    <div class="col-8">
         @yield('manage')
     </div>
-
-    <div class="col-md-3 menu">
+    <div class="col-3 menu">
         <h1>به پنل مدیریت خوش آمدید</h1>
         <div id="wrap">
             <div id="dropdown" class="ddmenu">
@@ -53,7 +51,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </div>
 
