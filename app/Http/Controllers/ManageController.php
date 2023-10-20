@@ -14,11 +14,6 @@ class ManageController extends Controller
         $this->middleware('auth');
     }*/
 
-    public function Manage(){
-        $page_title='بخش مدیریت';
-        return view('/pages/Manage',compact('page_title'));
-    }
-
     public function login_manager(){
         $page_title='سامانه پرسنلی';
         return view('/pages/Login_manage',compact('page_title'));
@@ -34,10 +29,16 @@ class ManageController extends Controller
             return ('نام کاربری یا رمز اشتباه است');
         }
     }
-    public function Manage_list_users(){
 
-        /*return view('/pages/Manage_list_users');*/
-        return response()->json('ok shod');
+    public function Manage(){
+        $page_title='بخش مدیریت';
+        return view('/pages/Manage',compact('page_title'));
+    }
+
+    public function Manage_list_users(){
+        $page_title='لیست کاربران';
+        return view('/pages/Manage_list_users',compact('page_title'));
+
     }
 
 }

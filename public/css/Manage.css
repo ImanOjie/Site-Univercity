@@ -194,7 +194,7 @@ p {
 .menu{
     background-color: rgba(0,0,0,0.39);
     border-radius: 50px;
-    padding: 0px 3px 150px 5px;
+    padding: 0px 3px 200px 5px;
     height: 100%;
     width: 20rem;
 }
@@ -202,7 +202,7 @@ p {
     display: block;
     width: 100%;
     margin: 0;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 .second-btn{
     display: block;
@@ -212,7 +212,7 @@ p {
 }
 
 /* user menu settings */
-#dropdown {
+#menu-btn {
     display: block;
     padding: 15px 0px;
     text-align: center;
@@ -221,9 +221,9 @@ p {
     position: relative;
     cursor: pointer;
     border-radius: 15px;
-    background: #fff;
+    background: rgba(0,255,98,0.39);
     font-size: 1.55em;
-    color: #656565;
+    color: white;
     font-weight: normal;
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -235,44 +235,35 @@ p {
     transition: all 0.15s linear;
 }
 
-#dropdown:hover {
-    color: green;
-}
-
-#dropdown.open {
-    background: rgba(0,255,98,0.39);
-    color: #fff;
-
-}
-
-#dropdown ul {
+#menu-btn ul {
     position: absolute;
     top: 100%;
     left: 9px;
     width: 95%;
     margin-top: 5px ;
     padding: 5px 0px;
-    display: none;
     border-radius: 8px;
     background: #fff;
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-#dropdown ul li {
+#menu-btn ul li {
     font-size: 0.9em;
 }
 
-#dropdown ul li a {
+#menu-btn ul li a {
     text-decoration: none;
     display: block;
     color: #447dd3;
     padding: 7px 15px;
 }
-#dropdown ul li a:hover {
+#menu-btn ul li a:hover {
     color: #6fa0e9;
     background: rgba(65,255,0,0.3);
 }
-
+a{
+    z-index: +2;
+}
 /*
 ///////////////////*/
