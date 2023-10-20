@@ -2,6 +2,9 @@
 @section('manage')
 
 
+    <div>
+        <h1>this is manage home</h1>
+    </div>
 
 
 

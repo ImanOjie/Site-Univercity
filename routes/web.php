@@ -14,18 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 //home
 Route::get('/',[App\Http\Controllers\HomeController::class,'home'])->name('home');
-Route::get('/List_course',[App\Http\Controllers\CourseController::class,'List_course'])->name('List_course');
+Route::middleware('auth')->get('/List_course',[App\Http\Controllers\CourseController::class,'List_course'])->name('List_course');
 Route::get('/Manage',[App\Http\Controllers\UserController::class,'Manage'])->name('Manage');
-
-//login
-Route::get('/login_user',[App\Http\Controllers\UserController::class,'login_user'])->name('login_user');
-Route::post('/finishlogin_user',[App\Http\Controllers\UserController::class,'finishlogin_user'])->name('finishlogin_user');
-Route::get('/login_manager',[App\Http\Controllers\UserController::class,'login_manager'])->name('login_manager');
-Route::post('/finishlogin_manager',[App\Http\Controllers\UserController::class,'finishlogin_manager'])->name('finishlogin_manager');
 
 //register
 Route::get('/registering',[App\Http\Controllers\UserController::class,'registering'])->name('registering');
 Route::post('/finish_registering',[App\Http\Controllers\UserController::class,'finish_registering'])->name('finish_registering');
+
+//login user
+Route::get('/login_user',[App\Http\Controllers\UserController::class,'login_user'])->name('login_user');
+Route::post('/finishlogin_user',[App\Http\Controllers\UserController::class,'finishlogin_user'])->name('finishlogin_user');
+
+//login Manage
+Route::get('/login_manager',[App\Http\Controllers\ManageController::class,'login_manager'])->name('login_manager');
+Route::post('/finishlogin_manager',[App\Http\Controllers\ManageController::class,'finishlogin_manager'])->name('finishlogin_manager');
 
 
 Route::get('/get_course/{id}',[App\Http\Controllers\CourseController::class,'get_course'])->name('get_course');

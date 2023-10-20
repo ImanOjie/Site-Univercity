@@ -124,21 +124,6 @@ ul {
     list-style: none;
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
-}
-strong {
-    font-weight: bold;
-}
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -286,7 +271,7 @@ p {
 }
 #dropdown ul li a:hover {
     color: #6fa0e9;
-    background: #e7f0f7;
+    background: rgba(65,255,0,0.3);
 }
 
 /*

@@ -2,8 +2,8 @@
 @section('manage')
 
     <div>
-        <h1>kdncvldnvlsvsbv lsvbl</h1>
-        <p>jsfbvlkonلدلدببببببببببvlnlnvls</p>
+        <h1>manage list users</h1>
+
     </div>
 
 
