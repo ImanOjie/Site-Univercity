@@ -50,9 +50,7 @@
         <img src="/uni-storage/chart.png" alt="chart" class="chart">
     </div>
 
-    <div class="row end-footer">
-<p> این سایت فقط به عنوان نمونه کار میباشد</p>
-    </div>
+
 
 
 

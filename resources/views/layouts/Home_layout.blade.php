@@ -71,20 +71,15 @@
             </li>
         </ul>
     </div>
-
-
 </div>
-
-
-
-
-
 
 <div>
     @yield('home')
 </div>
 
-
+<div class="row end-footer">
+    <p> این سایت فقط به عنوان نمونه کار میباشد</p>
+</div>
 
 
 
