@@ -41,6 +41,12 @@ class ManageController extends Controller
         return view('/pages/Manage_list_users',compact('users' , 'page_title'));
     }
 
+    public function Manage_add_user(){
+        $page_title='افزودن کاربر جدید';
+        return view('/pages/Manage_add_user',compact( 'page_title'));
+    }
+
+
 
 
 

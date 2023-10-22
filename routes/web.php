@@ -33,6 +33,7 @@ Route::post('/finishlogin_manager',[App\Http\Controllers\ManageController::class
 //manage pages
 Route::get('/Manage',[App\Http\Controllers\ManageController::class,'Manage'])->name('Manage');
 Route::get('/Manage_list_users',[App\Http\Controllers\ManageController::class,'Manage_list_users'])->name('Manage_list_users');
+Route::get('/Manage_add_user',[App\Http\Controllers\ManageController::class,'Manage_add_user'])->name('Manage_add_user');
 
 
 
