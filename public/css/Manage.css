@@ -269,11 +269,19 @@ a{
 ///////////////////*/
 
 .table{
+
     width: 95%;
     border: black 2px;
     border-style: solid;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
-td , th{
+td,th{
+
+    margin: 0;
+    padding: 0;
+    border: green 2px;
+    border-style: solid;
     text-align: center;
 }
