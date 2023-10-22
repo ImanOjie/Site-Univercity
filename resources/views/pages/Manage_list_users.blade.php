@@ -1,11 +1,11 @@
 @extends('layouts.Manage_layout',['page_title'=>$page_title])
 @section('manage')
-    <div>
+    <div class="manage-body">
         <table class="table table-striped">
             <thead>
             <tr>
+                <th>زمان آخرین آپدیت</th>
                 <th>زمان ثبت نام</th>
-                <th>رمز عبور</th>
                 <th>نام خانوادگی</th>
                 <th>نام</th>
                 <th>id</th>
@@ -13,30 +13,17 @@
             </tr>
             </thead>
             <tbody>
+            @foreach($users as $item)
             <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
+                <th scope="row">{{$item -> updated_at}}</th>
+                <th scope="row">{{$item -> created_at}}</th>
+                <td>{{$item -> family}}</td>
+                <td>{{$item -> name}}</td>
+                <td>{{$item -> id}}</td>
+                <td>{{$loop->index+1}}</td>
             </tr>
-            <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>3</td>
-            </tr>
+            @endforeach
+
             </tbody>
         </table>
     </div>
