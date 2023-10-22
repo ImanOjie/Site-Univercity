@@ -46,6 +46,29 @@ class ManageController extends Controller
         return view('/pages/Manage_add_user',compact( 'page_title'));
     }
 
+    public function Manage_save_add_user(Request $request){
+
+        $request->validate([
+            'name' => 'required',
+            'family' => 'required',
+            'password' => 'required|min:4',
+        ]);
+        $name = $request->input('name');
+        $family = $request->input('family');
+        $users = User::where('name',$request->get('name'))-> where('family',$request->get('family'))->first();
+        if ((!$users == $name) && (!$users == $family) ) {
+            $users = new User();
+            $users->name=$request->get('name');
+            $users->family=$request->get('family');
+            $users->password=Hash::make($request->get('password'));
+            $users->save();
+            return redirect()->route('Manage_add_user')->with(['save_ok_shod'=>'ثبت با موفقیت انجام شد']);
+        }else{
+            return ('شما قبلا ثبت نام کردید');
+        }
+
+    }
+
 
 
 
