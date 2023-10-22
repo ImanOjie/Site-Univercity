@@ -37,7 +37,7 @@ class ManageController extends Controller
 
     public function Manage_list_users(){
         $page_title='لیست کاربران';
-        $users = User::all();
+        $users = User::paginate(5);
         return view('/pages/Manage_list_users',compact('users' , 'page_title'));
     }
 

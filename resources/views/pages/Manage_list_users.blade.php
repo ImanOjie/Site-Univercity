@@ -22,9 +22,10 @@
                 <td>{{$item -> id}}</td>
                 <td>{{$loop->index+1}}</td>
             </tr>
-            @endforeach
 
+            @endforeach
             </tbody>
         </table>
     </div>
+    {{ $users->links() }}
 @endsection
