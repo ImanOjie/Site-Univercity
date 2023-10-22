@@ -267,3 +267,13 @@ a{
 }
 /*
 ///////////////////*/
+
+.table{
+    width: 95%;
+    border: black 2px;
+    border-style: solid;
+    font-size: 20px;
+}
+td , th{
+    text-align: center;
+}
