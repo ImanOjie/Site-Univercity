@@ -22,10 +22,15 @@
                 <td>{{$item -> id}}</td>
                 <td>{{$loop->index+1}}</td>
             </tr>
-
             @endforeach
             </tbody>
         </table>
     </div>
-    {{ $users->links() }}
+
+    <div class="paginate">
+        {{ $users->links() }}
+    </div>
+
+
+
 @endsection

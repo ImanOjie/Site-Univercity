@@ -281,12 +281,13 @@ a{
 
 }
 td,th{
-
-
     margin: 0;
     padding: 0;
     border: green 2px;
     border-style: solid;
     text-align: center;
     border-radius: 10px;
+}
+.paginate{
+    padding-right: 55px;
 }
