@@ -69,6 +69,11 @@ class ManageController extends Controller
 
     }
 
+    public function Manage_delete_user(){
+        $page_title='حذف کاربر';
+        return view('/pages/Manage_delete_user',compact( 'page_title'));
+    }
+
 
 
 
