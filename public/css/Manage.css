@@ -291,3 +291,28 @@ td,th{
 .paginate{
     padding-right: 55px;
 }
+.form{
+    width: auto;
+    padding: 9rem 15rem 0 0;
+}
+.text{
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    width: 20rem;
+    height: 50px;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+.submit-btn{
+    font-size: 17px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #0c4128;
+    border-radius: 10px;
+    box-shadow: #0c4128;
+}
