@@ -30,12 +30,14 @@ Route::get('/delete_getting_course/{id}',[App\Http\Controllers\CourseController:
 //login Manage
 Route::get('/login_manager',[App\Http\Controllers\ManageController::class,'login_manager'])->name('login_manager');
 Route::post('/finishlogin_manager',[App\Http\Controllers\ManageController::class,'finishlogin_manager'])->name('finishlogin_manager');
+
 //manage pages
 Route::get('/Manage',[App\Http\Controllers\ManageController::class,'Manage'])->name('Manage');
 Route::get('/Manage_list_users',[App\Http\Controllers\ManageController::class,'Manage_list_users'])->name('Manage_list_users');
 Route::get('/Manage_add_user',[App\Http\Controllers\ManageController::class,'Manage_add_user'])->name('Manage_add_user');
 Route::post('/Manage_save_add_user',[App\Http\Controllers\ManageController::class,'Manage_save_add_user'])->name('Manage_save_add_user');
 Route::get('/Manage_delete_user',[App\Http\Controllers\ManageController::class,'Manage_delete_user'])->name('Manage_delete_user');
+Route::post('/Manage_save_delete_user',[App\Http\Controllers\ManageController::class,'Manage_save_delete_user'])->name('Manage_save_delete_user');
 
 
 

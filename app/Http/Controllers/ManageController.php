@@ -34,7 +34,6 @@ class ManageController extends Controller
         $page_title='بخش مدیریت';
         return view('/pages/Manage',compact('page_title'));
     }
-
     public function Manage_list_users(){
         $page_title='لیست کاربران';
         $users = User::paginate(5);
@@ -45,9 +44,7 @@ class ManageController extends Controller
         $page_title='افزودن کاربر جدید';
         return view('/pages/Manage_add_user',compact( 'page_title'));
     }
-
     public function Manage_save_add_user(Request $request){
-
         $request->validate([
             'name' => 'required',
             'family' => 'required',
@@ -72,6 +69,10 @@ class ManageController extends Controller
     public function Manage_delete_user(){
         $page_title='حذف کاربر';
         return view('/pages/Manage_delete_user',compact( 'page_title'));
+    }
+    public function Manage_save_delete_user(){
+
+        return redirect()->route('Manage_delete_user')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);
     }
 
 
