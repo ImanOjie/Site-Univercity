@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -70,9 +71,18 @@ class ManageController extends Controller
         $page_title='حذف کاربر';
         return view('/pages/Manage_delete_user',compact( 'page_title'));
     }
-    public function Manage_save_delete_user(){
-
-        return redirect()->route('Manage_delete_user')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);
+    public function Manage_save_delete_user(Request $request){
+        $userdb = User::where('name',$request->get('name'))-> where('family',$request->get('family'))->first();
+        $name = $request->input('name');
+        $family = $request->input('family');
+        if($userdb->name === $name && $userdb->family === $family){
+            /*return Response()->json('delete shod');*/
+            $userdb->delete();
+            return redirect()->route('Manage_delete_user')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);
+        }else{
+            return Response()->json('oh my god nashod');
+        }
+        /*return redirect()->route('Manage_delete_user')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);*/
     }
 
 

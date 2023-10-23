@@ -292,7 +292,7 @@ td,th{
     padding-right: 55px;
 }
 .form{
-    width: auto;
+    width: 100%;
     padding: 9rem 15rem 0 0;
 }
 .text{
@@ -307,6 +307,7 @@ td,th{
     margin-bottom: 30px;
     padding-right: 20px;
     box-shadow: 0px 0px 5px 4px white;
+    outline: none;
 }
 .submit-btn{
     font-size: 17px;
