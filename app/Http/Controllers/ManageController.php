@@ -85,20 +85,17 @@ class ManageController extends Controller
 
     public function Manage_update_user(Request $request){
         $page_title='تغییر اطلاعات کاربر';
-        $oldname = $request['oldname'];
-        $oldfamily = $request['oldfamily'];
-        $user =User::where('name',$oldname && 'family', $oldfamily)->first();
+        $user = User::where('name',$request['oldname'] )->where('family', $request['oldfamily'])->first();
         return view('/pages/Manage_update_user',compact( 'page_title','user'));
     }
     public function Manage_save_update_user(Request $request){
-
         $request->validate([
             'oldname' => 'required',
-            '$oldfamily' => 'required',
+            'oldfamily' => 'required',
             'name' => 'required',
             'family' => 'required',
         ]);
-        User::where('name',$request['oldname'])->where( 'family',$request['$oldfamily'])->update([
+        User::where('name',$request['oldname'])->where( 'family',$request['oldfamily'])->update([
                     'name'=> $request->get('name') ,
                     'family'=> $request->get('family') ,
                 ]);
