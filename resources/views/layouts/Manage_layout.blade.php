@@ -42,7 +42,7 @@
                     <li><a href="{{route('Manage_add_user')}}">افزودن کاربر</a></li>
                     <li><a href="{{route('Manage_delete_user')}}">حذف کاربر</a></li>
                     <li><a href="{{route('Manage_update_user')}}">تغییر اطلاعات کاربر</a></li>
-                    <li><a href="#">تغییر درجه کاربر</a></li>
+                    <li><a href="{{route('Manage_role_user')}}">تغییر درجه کاربر</a></li>
                     <li><a href="#">تغییر دسترسی کاربر</a></li>
                 </ul>
             </div>
