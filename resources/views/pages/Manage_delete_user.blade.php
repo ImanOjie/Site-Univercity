@@ -17,9 +17,11 @@
         <br>
         <input class="submit-btn" type="submit" value="حذف کاربر">
     </form>
-    @if(session()->has('save_ok_shod'))
-        {{session()->get('save_ok_shod')}}
-    @endif
+    <div class="success">
+        @if(session()->has('save_ok_shod'))
+            {{session()->get('save_ok_shod')}}
+        @endif
+    </div>
 </div>
 
 
