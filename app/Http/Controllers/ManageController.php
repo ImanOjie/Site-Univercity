@@ -82,7 +82,11 @@ class ManageController extends Controller
         }else{
             return Response()->json('oh my god nashod');
         }
-        /*return redirect()->route('Manage_delete_user')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);*/
+    }
+
+    public function Manage_update_user(){
+        $page_title='تغییر اطلاعات کاربر';
+        return view('/pages/Manage_update_user',compact( 'page_title'));
     }
 
 
