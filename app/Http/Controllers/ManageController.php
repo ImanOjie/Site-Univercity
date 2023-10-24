@@ -76,17 +76,38 @@ class ManageController extends Controller
         $name = $request->input('name');
         $family = $request->input('family');
         if($userdb->name === $name && $userdb->family === $family){
-            /*return Response()->json('delete shod');*/
             $userdb->delete();
             return redirect()->route('Manage_delete_user')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);
         }else{
-            return Response()->json('oh my god nashod');
+            return Response()->json('حذف با مشکل مواجه شده است');
         }
     }
 
-    public function Manage_update_user(){
+    public function Manage_update_user(Request $request){
         $page_title='تغییر اطلاعات کاربر';
-        return view('/pages/Manage_update_user',compact( 'page_title'));
+        $exname = $request['exname'];
+        $exfamily = $request['exfamily'];
+        $user =User::where('name',$exname && 'family', $exfamily)->first();
+        return view('/pages/Manage_update_user',compact( 'page_title','user'));
+    }
+    public function Manage_save_update_user(Request $request){
+
+        $request->validate([
+            'name' => 'required',
+            'family' => 'required',
+        ]);
+        User::where('name',$request['exname'])->update([
+                    'name'=> $request->get('name') ,
+                    'family'=> $request->get('family') ,
+                ]);
+        return redirect()->route('Manage_update_user')->with(['user_update_shod'=>'کاربر با موفقیت آپدیت شد']);
+        
+
+
+
+
+
+
     }
 
 

@@ -42,6 +42,7 @@ Route::get('/Manage_delete_user',[App\Http\Controllers\ManageController::class,'
 Route::post('/Manage_save_delete_user',[App\Http\Controllers\ManageController::class,'Manage_save_delete_user'])->name('Manage_save_delete_user');
 
 Route::get('/Manage_update_user',[App\Http\Controllers\ManageController::class,'Manage_update_user'])->name('Manage_update_user');
+Route::post('/Manage_save_update_user',[App\Http\Controllers\ManageController::class,'Manage_save_update_user'])->name('Manage_save_update_user');
 
 
 

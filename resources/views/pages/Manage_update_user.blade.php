@@ -2,55 +2,40 @@
 @section('manage')
 
     <div class="row form">
+        <div class="col-md-4"></div>
         <div class="col-md-7">
-            <h1>مشخصات جدید را وارد کنید</h1>
-            @if(session()->has('save_ok_shod'))
-                {{session()->get('save_ok_shod')}}
-            @endif
-            <form action="{{route('Manage_save_add_user')}}" method="post">
+            <form action="{{route('Manage_save_update_user')}}" method="post">
                 @csrf
+                @if($errors->has('exname'))
+                    {!! $errors->first('exname') !!}
+                @endif
+                <input class="text" type="text" name="exname" placeholder="نام قبلی">
+                <br>
+                @if($errors->has('exfamily'))
+                    {!! $errors->first('exfamily') !!}
+                @endif
+                <input class="text" type="text" name="exfamily" placeholder="نام خانوادگی قبلی">
+                <br>
                 @if($errors->has('name'))
                     {!! $errors->first('name') !!}
                 @endif
-                <input class="text" type="text" name="name" placeholder="نام" required="">
+                <input class="text" type="text" name="name" placeholder="نام جدید" required="">
                 <br>
                 @if($errors->has('family'))
                     {!! $errors->first('family') !!}
                 @endif
-                <input class="text" type="text" name="family" placeholder="نام خانوادگی" required="">
+                <input class="text" type="text" name="family" placeholder="نام خانوادگی جدید" required="">
                 <br>
-                @if($errors->has('password'))
-                    {!! $errors->first('password') !!}
-                @endif
-                <input class="text" type="password" name="password" placeholder="رمز عبور" required="">
-                <br>
-                <input class="submit-btn" type="submit" value="ایجاد کاربر">
+                <input class="submit-btn" type="submit" value="ثبت تغییرات">
             </form>
-        </div>
-        <div class="col-md-4">
-            <h1>مشخصات قبلی را وارد کنید</h1>
-            @if(session()->has('save_ok_shod'))
-                {{session()->get('save_ok_shod')}}
-            @endif
-            <form action="{{route('Manage_save_add_user')}}" method="post">
-                @csrf
-                @if($errors->has('name'))
-                    {!! $errors->first('name') !!}
+            <div class="success">
+                @if(session()->has('user_update_shod'))
+                    {{session()->get('user_update_shod')}}
                 @endif
-                <input class="text" type="text" name="name" placeholder="نام" required="">
-                @if($errors->has('family'))
-                    {!! $errors->first('family') !!}
-                @endif
-                <input class="text" type="text" name="family" placeholder="نام خانوادگی" required="">
-                @if($errors->has('password'))
-                    {!! $errors->first('password') !!}
-                @endif
-                <input class="text" type="password" name="password" placeholder="رمز عبور" required="">
-
-                <input class="submit-btn" type="submit" value="ایجاد کاربر">
-            </form>
+            </div>
         </div>
         <div class="col-md-1"></div>
+
     </div>
 
 
