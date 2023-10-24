@@ -9,12 +9,12 @@
                 @if($errors->has('exname'))
                     {!! $errors->first('exname') !!}
                 @endif
-                <input class="text" type="text" name="exname" placeholder="نام قبلی">
+                <input class="text" type="text" name="oldname" placeholder="نام قبلی" required="">
                 <br>
                 @if($errors->has('exfamily'))
                     {!! $errors->first('exfamily') !!}
                 @endif
-                <input class="text" type="text" name="exfamily" placeholder="نام خانوادگی قبلی">
+                <input class="text" type="text" name="oldfamily" placeholder="نام خانوادگی قبلی" required="">
                 <br>
                 @if($errors->has('name'))
                     {!! $errors->first('name') !!}

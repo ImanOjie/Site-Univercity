@@ -37,7 +37,7 @@ class ManageController extends Controller
     }
     public function Manage_list_users(){
         $page_title='لیست کاربران';
-        $users = User::paginate(5);
+        $users = User::paginate(10);
         return view('/pages/Manage_list_users',compact('users' , 'page_title'));
     }
 
@@ -85,18 +85,20 @@ class ManageController extends Controller
 
     public function Manage_update_user(Request $request){
         $page_title='تغییر اطلاعات کاربر';
-        $exname = $request['exname'];
-        $exfamily = $request['exfamily'];
-        $user =User::where('name',$exname && 'family', $exfamily)->first();
+        $oldname = $request['oldname'];
+        $oldfamily = $request['oldfamily'];
+        $user =User::where('name',$oldname && 'family', $oldfamily)->first();
         return view('/pages/Manage_update_user',compact( 'page_title','user'));
     }
     public function Manage_save_update_user(Request $request){
 
         $request->validate([
+            'oldname' => 'required',
+            '$oldfamily' => 'required',
             'name' => 'required',
             'family' => 'required',
         ]);
-        User::where('name',$request['exname'])->where( 'family',$request['exfamily'])->update([
+        User::where('name',$request['oldname'])->where( 'family',$request['$oldfamily'])->update([
                     'name'=> $request->get('name') ,
                     'family'=> $request->get('family') ,
                 ]);
