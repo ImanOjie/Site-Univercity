@@ -4,9 +4,7 @@
     <div class="col-md-7"></div>
     <div class="col-md-4">
 
-            @if(session()->has('save_ok_shod'))
-                {{session()->get('save_ok_shod')}}
-            @endif
+
             <form action="{{route('Manage_save_add_user')}}" method="post">
                 @csrf
                 @if($errors->has('name'))
@@ -24,6 +22,12 @@
 
                 <input class="submit-btn" type="submit" value="ایجاد کاربر">
             </form>
+        <div class="success">
+            @if(session()->has('save_ok_shod'))
+                {{session()->get('save_ok_shod')}}
+            @endif
+        </div>
+
     </div>
     <div class="col-md-1"></div>
 </div>

@@ -319,3 +319,13 @@ td,th{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #0c4128;
 }
+.update-titles{
+    display: block;
+    text-align: right;
+    padding-bottom: 20px;
+}
+.success{
+    font-size: 20px;
+    color: blue;
+    padding: 20px 50px 0px 0px;
+}
