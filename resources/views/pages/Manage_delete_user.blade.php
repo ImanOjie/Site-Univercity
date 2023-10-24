@@ -1,6 +1,6 @@
 @extends('layouts.Manage_layout',['page_title'=>$page_title])
 @section('manage')
-<div class="form">
+<div class="row form">
 
     <form action="{{route('Manage_save_delete_user')}}" method="post">
         @csrf
