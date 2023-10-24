@@ -96,12 +96,12 @@ class ManageController extends Controller
             'name' => 'required',
             'family' => 'required',
         ]);
-        User::where('name',$request['exname'])->update([
+        User::where('name',$request['exname'])->where( 'family',$request['exfamily'])->update([
                     'name'=> $request->get('name') ,
                     'family'=> $request->get('family') ,
                 ]);
         return redirect()->route('Manage_update_user')->with(['user_update_shod'=>'کاربر با موفقیت آپدیت شد']);
-        
+
 
 
 
