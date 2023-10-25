@@ -110,10 +110,11 @@ class ManageController extends Controller
     }
     public function Manage_save_role_user(){
 
-        Role::create(['name' => 'manager']);
-        Role::create(['name' => 'super-admin']);
-        Role::create(['name' => 'admin']);
-        Role::create(['name' => 'user']);
+        Permission::create(['name' => 'reading']);
+        Permission::create(['name' => 'simple-editor']);
+        Permission::create(['name' => 'super-editor']);
+        Permission::create(['name' => 'full-access']);
+
         return redirect()->route('Manage_role_user');
 
         /*$user = User::where('name',$request['name'] )->where('family', $request['family'])->first();
