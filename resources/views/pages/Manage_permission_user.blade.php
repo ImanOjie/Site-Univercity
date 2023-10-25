@@ -8,7 +8,7 @@
             <br>
             <input class="text" type="text" name="family" placeholder="نام خانوادگی" required="">
             <br>
-            <input class="text" type="text" name="permission" placeholder="نام درجه" required="">
+            <input class="text" type="text" name="permission" placeholder="نام دسترسی" required="">
             <br>
             <input class="sign" type="submit" value="ثبت">
         </form>
