@@ -117,6 +117,11 @@ class ManageController extends Controller
 
     }
 
+    public function Manage_permission_user(){
+        $page_title='تغییر دسترسی کاربر';
+        return view('/pages/Manage_permission_user',compact( 'page_title'));
+    }
+
 
 
 
