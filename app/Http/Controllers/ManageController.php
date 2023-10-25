@@ -110,10 +110,11 @@ class ManageController extends Controller
     }
     public function Manage_save_role_user(){
 
-        Permission::create(['name' => 'reading']);
-        Permission::create(['name' => 'simple-editor']);
-        Permission::create(['name' => 'super-editor']);
-        Permission::create(['name' => 'full-access']);
+        $role = Role::findById(8);
+        /*$role->givePermissionTo('full-access');*/
+        /*$role->givePermissionTo('super-editor');*/
+        /*$role->givePermissionTo('simple-editor');*/
+        $role->givePermissionTo('reading');
 
         return redirect()->route('Manage_role_user');
 
