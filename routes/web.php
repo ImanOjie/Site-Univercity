@@ -52,7 +52,7 @@ Route::post('/Manage_save_update_user',[App\Http\Controllers\ManageController::c
 
 //add role to user
 Route::get('/Manage_role_user',[App\Http\Controllers\ManageController::class,'Manage_role_user'])->name('Manage_role_user');
-Route::get('/Manage_save_role_user',[App\Http\Controllers\ManageController::class,'Manage_save_role_user'])->name('Manage_save_role_user');
+Route::post('/Manage_save_role_user',[App\Http\Controllers\ManageController::class,'Manage_save_role_user'])->name('Manage_save_role_user');
 
 
 

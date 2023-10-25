@@ -2,7 +2,7 @@
 @section('manage')
 
     <div class="add-role">
-        <form action="{{route('Manage_save_role_user')}}">
+        <form action="{{route('Manage_save_role_user')}}"method="post">
             @csrf
         <input class="text" type="text" name="name" placeholder="نام" required="">
         <br>
