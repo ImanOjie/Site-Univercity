@@ -108,15 +108,13 @@ class ManageController extends Controller
         $page_title='تغییر درجه کاربر';
         return view('/pages/Manage_role_user',compact( 'page_title'));
     }
-    public function Manage_save_role_user(){
+    public function Manage_save_role_user(Request $Request){
 
-        $user = User::find(12);
-        /*$user->hasRole('manager');*/
-        $user->assignRole('super-admin');
+        $user = User::where('name',$Request['name'])->where('family',$Request['family'])->first();
+
+        $user->assignRole($Request['role']);
         return redirect()->route('Manage_role_user');
 
-        /*$user = User::where('name',$request['name'] )->where('family', $request['family'])->first();
-        dd($request->input('name'));*/
     }
 
 
