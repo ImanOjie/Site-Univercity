@@ -104,11 +104,20 @@ class ManageController extends Controller
         return redirect()->route('Manage_update_user')->with(['user_update_shod'=>'تغییرات با موفقیت انجام شد']);
     }
 
-    function Manage_role_user(){
+    public function Manage_role_user(){
         $page_title='تغییر درجه کاربر';
         return view('/pages/Manage_role_user',compact( 'page_title'));
     }
+    public function Manage_save_role_user(){
 
+        Role::create(['name' => 'manager']);
+        Role::create(['name' => 'super-admin']);
+        Role::create(['name' => 'admin']);
+        return redirect()->route('Manage_role_user');
+
+        /*$user = User::where('name',$request['name'] )->where('family', $request['family'])->first();
+        dd($request->input('name'));*/
+    }
 
 
 

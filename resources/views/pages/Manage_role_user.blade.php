@@ -8,7 +8,7 @@
         <br>
         <input class="text" type="text" name="role" placeholder="نام درجه" required="">
         <br>
-            <a href="">
+            <a href="{{route('Manage_save_role_user')}}">
                 <button class="sign-role">
                     ثبت
                 </button>
