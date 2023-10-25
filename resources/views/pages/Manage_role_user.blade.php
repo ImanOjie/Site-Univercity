@@ -11,10 +11,12 @@
         <input class="text" type="text" name="role" placeholder="نام درجه" required="">
         <br>
             <input class="sign-role" type="submit" value="ثبت">
-            {{--<a href="{{route('Manage_save_role_user')}}">
-                <button class="sign-role">ثبت</button>
-            </a>--}}
         </form>
+        <div class="success">
+            @if(session()->has('user_change_shod'))
+                {{session()->get('user_change_shod')}}
+            @endif
+        </div>
     </div>
 
 

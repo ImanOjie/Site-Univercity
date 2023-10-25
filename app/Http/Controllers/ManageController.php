@@ -113,7 +113,7 @@ class ManageController extends Controller
         $user = User::where('name',$Request['name'])->where('family',$Request['family'])->first();
         $user->syncRoles([]);
         $user->assignRole($Request['role']);
-        return redirect()->route('Manage_role_user');
+        return redirect()->route('Manage_role_user')->with(['user_change_shod'=>'تغییرات با موفقیت انجام شد']);
 
     }
 
