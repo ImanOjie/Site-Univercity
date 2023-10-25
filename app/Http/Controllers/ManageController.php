@@ -111,7 +111,7 @@ class ManageController extends Controller
     public function Manage_save_role_user(Request $Request){
 
         $user = User::where('name',$Request['name'])->where('family',$Request['family'])->first();
-
+        $user->syncRoles([]);
         $user->assignRole($Request['role']);
         return redirect()->route('Manage_role_user');
 
