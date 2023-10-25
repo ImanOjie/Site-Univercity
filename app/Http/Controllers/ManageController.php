@@ -98,8 +98,8 @@ class ManageController extends Controller
             'family' => 'required',
         ]);
         User::where('name',$request['oldname'])->where( 'family',$request['oldfamily'])->update([
-                    'name'=> $request->get('name') ,
-                    'family'=> $request->get('family') ,
+            'name'=> $request->get('name') ,
+            'family'=> $request->get('family') ,
         ]);
         return redirect()->route('Manage_update_user')->with(['user_update_shod'=>'تغییرات با موفقیت انجام شد']);
     }
@@ -109,19 +109,22 @@ class ManageController extends Controller
         return view('/pages/Manage_role_user',compact( 'page_title'));
     }
     public function Manage_save_role_user(Request $Request){
-
         $user = User::where('name',$Request['name'])->where('family',$Request['family'])->first();
         $user->syncRoles([]);
         $user->assignRole($Request['role']);
         return redirect()->route('Manage_role_user')->with(['user_change_shod'=>'تغییرات با موفقیت انجام شد']);
-
     }
 
     public function Manage_permission_user(){
         $page_title='تغییر دسترسی کاربر';
         return view('/pages/Manage_permission_user',compact( 'page_title'));
     }
-
+    public function Manage_save_permission_user(Request $Request){
+        $user = User::where('name',$Request['name'])->where('family',$Request['family'])->first();
+        $user->syncPermissions([]);
+        $user->givePermissionTo($Request['permission']);
+        return redirect()->route('Manage_permission_user')->with(['user_change_shod'=>'تغییرات با موفقیت انجام شد']);
+    }
 
 
 

@@ -56,6 +56,7 @@ Route::post('/Manage_save_role_user',[App\Http\Controllers\ManageController::cla
 
 //change permission of user
 Route::get('/Manage_permission_user',[App\Http\Controllers\ManageController::class,'Manage_permission_user'])->name('Manage_permission_user');
+Route::post('/Manage_save_permission_user',[App\Http\Controllers\ManageController::class,'Manage_save_permission_user'])->name('Manage_save_permission_user');
 
 
 

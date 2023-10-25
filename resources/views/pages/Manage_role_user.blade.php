@@ -10,7 +10,7 @@
         <br>
         <input class="text" type="text" name="role" placeholder="نام درجه" required="">
         <br>
-            <input class="sign-role" type="submit" value="ثبت">
+            <input class="sign" type="submit" value="ثبت">
         </form>
         <div class="success">
             @if(session()->has('user_change_shod'))

@@ -332,7 +332,7 @@ td,th{
 .add-role{
     padding: 150px 150px 0px 0px;
 }
-.sign-role{
+.sign{
     font-size: 22px;
     letter-spacing: 3px;
     width: 18rem;
@@ -344,7 +344,7 @@ td,th{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #0c4128;
 }
-.sign-role:hover{
+.sign:hover{
     color: #0c4128;
     background-color: greenyellow;
     box-shadow: 0px 0px 10px 1px #0c4128;
