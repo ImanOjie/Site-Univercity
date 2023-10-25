@@ -113,15 +113,12 @@ class ManageController extends Controller
         Role::create(['name' => 'manager']);
         Role::create(['name' => 'super-admin']);
         Role::create(['name' => 'admin']);
+        Role::create(['name' => 'user']);
         return redirect()->route('Manage_role_user');
 
         /*$user = User::where('name',$request['name'] )->where('family', $request['family'])->first();
         dd($request->input('name'));*/
     }
-
-
-
-
 
 
 
