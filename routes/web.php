@@ -18,6 +18,7 @@ Route::get('/',[App\Http\Controllers\HomeController::class,'home'])->name('home'
 //register user
 Route::get('/registering',[App\Http\Controllers\UserController::class,'registering'])->name('registering');
 Route::post('/finish_registering',[App\Http\Controllers\UserController::class,'finish_registering'])->name('finish_registering');
+
 //login user
 Route::get('/login_user',[App\Http\Controllers\UserController::class,'login_user'])->name('login_user');
 Route::post('/finishlogin_user',[App\Http\Controllers\UserController::class,'finishlogin_user'])->name('finishlogin_user');
@@ -33,19 +34,24 @@ Route::post('/finishlogin_manager',[App\Http\Controllers\ManageController::class
 
 //manage pages
 Route::get('/Manage',[App\Http\Controllers\ManageController::class,'Manage'])->name('Manage');
+
+//list users
 Route::get('/Manage_list_users',[App\Http\Controllers\ManageController::class,'Manage_list_users'])->name('Manage_list_users');
 
+//add user
 Route::get('/Manage_add_user',[App\Http\Controllers\ManageController::class,'Manage_add_user'])->name('Manage_add_user');
 Route::post('/Manage_save_add_user',[App\Http\Controllers\ManageController::class,'Manage_save_add_user'])->name('Manage_save_add_user');
 
+//delete user
 Route::get('/Manage_delete_user',[App\Http\Controllers\ManageController::class,'Manage_delete_user'])->name('Manage_delete_user');
 Route::post('/Manage_save_delete_user',[App\Http\Controllers\ManageController::class,'Manage_save_delete_user'])->name('Manage_save_delete_user');
 
+//update user
 Route::get('/Manage_update_user',[App\Http\Controllers\ManageController::class,'Manage_update_user'])->name('Manage_update_user');
 Route::post('/Manage_save_update_user',[App\Http\Controllers\ManageController::class,'Manage_save_update_user'])->name('Manage_save_update_user');
 
+//add role to user
 Route::get('/Manage_role_user',[App\Http\Controllers\ManageController::class,'Manage_role_user'])->name('Manage_role_user');
-Route::post('/Manage_save_role_user',[App\Http\Controllers\ManageController::class,'Manage_save_role_user'])->name('Manage_save_role_user');
 
 
 

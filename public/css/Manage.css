@@ -329,3 +329,17 @@ td,th{
     color: blue;
     padding: 20px 50px 0px 0px;
 }
+.add-role{
+    padding: 150px 150px 0px 0px;
+}
+.sign-role{
+    font-size: 17px;
+    width: 18rem;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: #0c4128;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #0c4128;
+}

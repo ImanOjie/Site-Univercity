@@ -7,6 +7,8 @@ use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 class ManageController extends Controller
 {
@@ -102,10 +104,10 @@ class ManageController extends Controller
         return redirect()->route('Manage_update_user')->with(['user_update_shod'=>'تغییرات با موفقیت انجام شد']);
     }
 
-         function Manage_role_user(){
-            $page_title='تغییر درجه کاربر';
-            return view('/pages/Manage_role_user',compact( 'page_title'));
-        }
+    function Manage_role_user(){
+        $page_title='تغییر درجه کاربر';
+        return view('/pages/Manage_role_user',compact( 'page_title'));
+    }
 
 
 
