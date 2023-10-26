@@ -34,6 +34,7 @@
     </div>
     <div class="col-3 menu">
         <h1>به پنل مدیریت خوش آمدید</h1>
+
         <div id="wrap">
             <div id="menu-btn" class="ddmenu">
                 تنظیمات کاربران
@@ -47,8 +48,9 @@
                 </ul>
             </div>
         </div>
-        <div class="second-btn">
-            <div id="menu-btn" class="ddmenu drop2">
+
+        <div  class="second-btn">
+            <div id="menu-btn" class="ddmenu">
                 تنظیمات دروس
                 <ul>
                     <li><a href="{{route('Manage_list_courses')}}">لیست دروس</a></li>
@@ -58,6 +60,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </div>
 
