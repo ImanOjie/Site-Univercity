@@ -179,6 +179,24 @@ class ManageController extends Controller
         }
     }
 
+            // MANAGE DELETE USER //
+
+    public function Manage_delete_course(){
+        $page_title='حذف کاربر';
+        return view('/pages/Manage_delete_course',compact( 'page_title'));
+    }
+    public function Manage_save_delete_course(Request $request){
+        $coursedb = Course::where('name',$request->get('name'))-> where('unit',$request->get('unit'))->first();
+        $name = $request->input('name');
+        $unit = $request->input('unit');
+        if($coursedb->name === $name && $coursedb->unit === $unit){
+            $userdb->delete();
+            return redirect()->route('Manage_delete_course')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);
+        }else{
+            return Response()->json('حذف با مشکل مواجه شده است');
+        }
+    }
+
 
 
 

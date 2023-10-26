@@ -55,7 +55,7 @@
                 <ul>
                     <li><a href="{{route('Manage_list_courses')}}">لیست دروس</a></li>
                     <li><a href="{{route('Manage_add_course')}}">افزودن درس</a></li>
-                    <li><a href="#">حذف درس</a></li>
+                    <li><a href="{{route('Manage_delete_course')}}">حذف درس</a></li>
                     <li><a href="#">تغییر اطلاعات درس</a></li>
                 </ul>
             </div>
