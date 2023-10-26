@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use App\Models\User;
 use http\Env\Response;
 use Illuminate\Http\Request;
@@ -147,7 +148,8 @@ class ManageController extends Controller
 
     public function Manage_list_courses(){
         $page_title='لیست دروس';
-        return view('/pages/Manage_list_courses',compact( 'page_title'));
+        $courses = Course::paginate(10);
+        return view('/pages/Manage_list_courses',compact( 'page_title','courses'));
     }
 
 
