@@ -186,11 +186,10 @@ class ManageController extends Controller
         return view('/pages/Manage_delete_course',compact( 'page_title'));
     }
     public function Manage_save_delete_course(Request $request){
-        $coursedb = Course::where('name',$request->get('name'))-> where('unit',$request->get('unit'))->first();
+        $coursedb = Course::where('name',$request->get('name'))->first();
         $name = $request->input('name');
-        $unit = $request->input('unit');
-        if($coursedb->name === $name && $coursedb->unit === $unit){
-            $userdb->delete();
+        if($coursedb->name === $name){
+            $coursedb->delete();
             return redirect()->route('Manage_delete_course')->with(['save_ok_shod'=>'حذف با موفقیت انجام شد']);
         }else{
             return Response()->json('حذف با مشکل مواجه شده است');
