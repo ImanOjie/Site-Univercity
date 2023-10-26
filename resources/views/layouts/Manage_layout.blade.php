@@ -51,7 +51,7 @@
             <div id="menu-btn" class="ddmenu drop2">
                 تنظیمات دروس
                 <ul>
-                    <li><a href="#">لیست دروس</a></li>
+                    <li><a href="{{route('Manage_list_courses')}}">لیست دروس</a></li>
                     <li><a href="#">افزودن درس</a></li>
                     <li><a href="#">حذف درس</a></li>
                     <li><a href="#">تغییر اطلاعات درس</a></li>

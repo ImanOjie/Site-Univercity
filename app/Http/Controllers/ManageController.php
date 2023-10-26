@@ -143,6 +143,12 @@ class ManageController extends Controller
         return redirect()->route('Manage_permission_user')->with(['user_change_shod'=>'تغییرات با موفقیت انجام شد']);
     }
 
+            // MANAGE LIST COURSES //
+
+    public function Manage_list_courses(){
+        $page_title='لیست دروس';
+        return view('/pages/Manage_list_courses',compact( 'page_title'));
+    }
 
 
 

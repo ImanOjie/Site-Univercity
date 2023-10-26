@@ -58,6 +58,8 @@ Route::post('/Manage_save_role_user',[App\Http\Controllers\ManageController::cla
 Route::get('/Manage_permission_user',[App\Http\Controllers\ManageController::class,'Manage_permission_user'])->name('Manage_permission_user');
 Route::post('/Manage_save_permission_user',[App\Http\Controllers\ManageController::class,'Manage_save_permission_user'])->name('Manage_save_permission_user');
 
+//list courses
+Route::get('/Manage_list_courses',[App\Http\Controllers\ManageController::class,'Manage_list_courses'])->name('Manage_list_courses');
 
 
 
