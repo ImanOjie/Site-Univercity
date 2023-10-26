@@ -17,6 +17,9 @@ class ManageController extends Controller
         $this->middleware('auth');
     }*/
 
+
+            // LOGIN MANAGE //
+
     public function login_manager(){
         $page_title='سامانه پرسنلی';
         return view('/pages/Login_manage',compact('page_title'));
@@ -33,15 +36,22 @@ class ManageController extends Controller
         }
     }
 
+            // MANAGE HOME //
+
     public function Manage(){
         $page_title='بخش مدیریت';
         return view('/pages/Manage',compact('page_title'));
     }
+
+            // MANAGE LIST USERS //
+
     public function Manage_list_users(){
         $page_title='لیست کاربران';
         $users = User::paginate(10);
         return view('/pages/Manage_list_users',compact('users' , 'page_title'));
     }
+
+            // MANAGE ADD USER //
 
     public function Manage_add_user(){
         $page_title='افزودن کاربر جدید';
@@ -66,8 +76,9 @@ class ManageController extends Controller
         }else{
             return ('شما قبلا ثبت نام کردید');
         }
-
     }
+
+            // MANAGE DELETE USER //
 
     public function Manage_delete_user(){
         $page_title='حذف کاربر';
@@ -84,6 +95,8 @@ class ManageController extends Controller
             return Response()->json('حذف با مشکل مواجه شده است');
         }
     }
+
+            // MANAGE UPDATE USER //
 
     public function Manage_update_user(Request $request){
         $page_title='تغییر اطلاعات کاربر';
@@ -104,6 +117,8 @@ class ManageController extends Controller
         return redirect()->route('Manage_update_user')->with(['user_update_shod'=>'تغییرات با موفقیت انجام شد']);
     }
 
+            // MANAGE CHANGE ROLE OF USER //
+
     public function Manage_role_user(){
         $page_title='تغییر درجه کاربر';
         return view('/pages/Manage_role_user',compact( 'page_title'));
@@ -114,6 +129,8 @@ class ManageController extends Controller
         $user->assignRole($Request['role']);
         return redirect()->route('Manage_role_user')->with(['user_change_shod'=>'تغییرات با موفقیت انجام شد']);
     }
+
+            // MANAGE CHANGE PERMISSION OF USER //
 
     public function Manage_permission_user(){
         $page_title='تغییر دسترسی کاربر';
