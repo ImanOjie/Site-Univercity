@@ -69,6 +69,10 @@ Route::post('/Manage_save_add_course',[App\Http\Controllers\ManageController::cl
 Route::get('/Manage_delete_course',[App\Http\Controllers\ManageController::class,'Manage_delete_course'])->name('Manage_delete_course');
 Route::post('/Manage_save_delete_course',[App\Http\Controllers\ManageController::class,'Manage_save_delete_course'])->name('Manage_save_delete_course');
 
+//change course
+Route::get('/Manage_update_course',[App\Http\Controllers\ManageController::class,'Manage_update_course'])->name('Manage_update_course');
+Route::post('/Manage_save_update_course',[App\Http\Controllers\ManageController::class,'Manage_save_update_course'])->name('Manage_save_update_course');
+
 
 
 

@@ -196,7 +196,24 @@ class ManageController extends Controller
         }
     }
 
+            // MANAGE UPDATE COURSE //
 
+    public function Manage_update_course(Request $request){
+        $page_title='تغییر اطلاعات کاربر';
+        $course = Course::where('name',$request['name'] )->where('unit', $request['unit'])->first();
+        return view('/pages/Manage_update_course',compact( 'page_title','course'));
+    }
+    public function Manage_save_update_course(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'unit' => 'required',
+        ]);
+        Course::where('name',$request['name'])->where( 'unit',$request['unit'])->update([
+            'name'=> $request->get('name') ,
+            'unit'=> $request->get('unit') ,
+        ]);
+        return redirect()->route('Manage_update_course')->with(['user_update_shod'=>'تغییرات با موفقیت انجام شد']);
+    }
 
 
 }
