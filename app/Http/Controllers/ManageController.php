@@ -154,7 +154,8 @@ class ManageController extends Controller
 
 
 
-            // MANAGE ADD COURSE
+            // MANAGE ADD COURSE //
+
     public function Manage_add_course(){
         $page_title='افزودن کاربر جدید';
         return view('/pages/Manage_add_course',compact( 'page_title'));
@@ -168,7 +169,7 @@ class ManageController extends Controller
         $unit = $request['unit'];
         $course = Course::where('name',$request->get('name'))-> where('unit',$request->get('unit'))->first();
         if ((!$course == $name) && (!$course == $unit) ) {
-            $course = new User();
+            $course = new Course();
             $course->name=$request->get('name');
             $course->unit=$request->get('unit');
             $course->save();
