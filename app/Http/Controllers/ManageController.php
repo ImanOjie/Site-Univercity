@@ -154,6 +154,31 @@ class ManageController extends Controller
 
 
 
+            // MANAGE ADD COURSE
+    public function Manage_add_course(){
+        $page_title='افزودن کاربر جدید';
+        return view('/pages/Manage_add_course',compact( 'page_title'));
+    }
+    public function Manage_save_add_course(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'unit' => 'required',
+        ]);
+        $name = $request['name'];
+        $unit = $request['unit'];
+        $course = Course::where('name',$request->get('name'))-> where('unit',$request->get('unit'))->first();
+        if ((!$course == $name) && (!$course == $unit) ) {
+            $course = new User();
+            $course->name=$request->get('name');
+            $course->unit=$request->get('unit');
+            $course->save();
+            return redirect()->route('Manage_add_course')->with(['save_ok_shod'=>'ثبت درس با موفقیت انجام شد']);
+        }else{
+            return ('این درس قبلا ثبت شده است');
+        }
+    }
+
+
 
 
 }

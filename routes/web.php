@@ -61,6 +61,10 @@ Route::post('/Manage_save_permission_user',[App\Http\Controllers\ManageControlle
 //list courses
 Route::get('/Manage_list_courses',[App\Http\Controllers\ManageController::class,'Manage_list_courses'])->name('Manage_list_courses');
 
+//add course
+Route::get('/Manage_add_course',[App\Http\Controllers\ManageController::class,'Manage_add_course'])->name('Manage_add_course');
+Route::post('/Manage_save_add_course',[App\Http\Controllers\ManageController::class,'Manage_save_add_course'])->name('Manage_save_add_course');
+
 
 
 
