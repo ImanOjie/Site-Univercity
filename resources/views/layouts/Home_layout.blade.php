@@ -12,7 +12,7 @@
     <title>{{$page_title}}</title>
 </head>
 
-<body>
+<body onload="loading()">
 <div class="row navbar">
     <div class="col-md-4 login">
         <ul>
